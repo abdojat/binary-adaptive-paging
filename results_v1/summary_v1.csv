@@ -1,0 +1,961 @@
+strategy,region_start_page,region_size_pages,mapping_count,avg_mapping_size_pages,largest_mapping_pages,estimated_tlb_reach_pages,internal_fragmentation_pages,lookup_model
+fixed,0,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,1,1,1.0000,1,1,0,single huge size plus base pages
+multi_size_unaligned,0,1,1,1.0000,1,1,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,1,1,1.0000,1,1,0,multi-size with absolute virtual alignment
+binary_adaptive,0,1,1,1.0000,1,1,0,xor + msb + region metadata lookup
+fixed,0,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,2,2,1.0000,1,2,0,single huge size plus base pages
+multi_size_unaligned,0,2,1,2.0000,2,2,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,2,1,2.0000,2,2,0,multi-size with absolute virtual alignment
+binary_adaptive,0,2,1,2.0000,2,2,0,xor + msb + region metadata lookup
+fixed,0,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,3,3,1.0000,1,3,0,single huge size plus base pages
+multi_size_unaligned,0,3,2,1.5000,2,3,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,3,2,1.5000,2,3,0,multi-size with absolute virtual alignment
+binary_adaptive,0,3,2,1.5000,2,3,0,xor + msb + region metadata lookup
+fixed,0,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,4,4,1.0000,1,4,0,single huge size plus base pages
+multi_size_unaligned,0,4,1,4.0000,4,4,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,4,1,4.0000,4,4,0,multi-size with absolute virtual alignment
+binary_adaptive,0,4,1,4.0000,4,4,0,xor + msb + region metadata lookup
+fixed,0,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,5,5,1.0000,1,5,0,single huge size plus base pages
+multi_size_unaligned,0,5,2,2.5000,4,5,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,5,2,2.5000,4,5,0,multi-size with absolute virtual alignment
+binary_adaptive,0,5,2,2.5000,4,5,0,xor + msb + region metadata lookup
+fixed,0,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,7,7,1.0000,1,7,0,single huge size plus base pages
+multi_size_unaligned,0,7,3,2.3333,4,7,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,7,3,2.3333,4,7,0,multi-size with absolute virtual alignment
+binary_adaptive,0,7,3,2.3333,4,7,0,xor + msb + region metadata lookup
+fixed,0,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,8,8,1.0000,1,8,0,single huge size plus base pages
+multi_size_unaligned,0,8,1,8.0000,8,8,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,8,1,8.0000,8,8,0,multi-size with absolute virtual alignment
+binary_adaptive,0,8,1,8.0000,8,8,0,xor + msb + region metadata lookup
+fixed,0,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,9,9,1.0000,1,9,0,single huge size plus base pages
+multi_size_unaligned,0,9,2,4.5000,8,9,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,9,2,4.5000,8,9,0,multi-size with absolute virtual alignment
+binary_adaptive,0,9,2,4.5000,8,9,0,xor + msb + region metadata lookup
+fixed,0,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,13,13,1.0000,1,13,0,single huge size plus base pages
+multi_size_unaligned,0,13,3,4.3333,8,13,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,13,3,4.3333,8,13,0,multi-size with absolute virtual alignment
+binary_adaptive,0,13,3,4.3333,8,13,0,xor + msb + region metadata lookup
+fixed,0,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,16,16,1.0000,1,16,0,single huge size plus base pages
+multi_size_unaligned,0,16,1,16.0000,16,16,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,16,1,16.0000,16,16,0,multi-size with absolute virtual alignment
+binary_adaptive,0,16,1,16.0000,16,16,0,xor + msb + region metadata lookup
+fixed,0,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,19,19,1.0000,1,19,0,single huge size plus base pages
+multi_size_unaligned,0,19,3,6.3333,16,19,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,19,3,6.3333,16,19,0,multi-size with absolute virtual alignment
+binary_adaptive,0,19,3,6.3333,16,19,0,xor + msb + region metadata lookup
+fixed,0,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,31,31,1.0000,1,31,0,single huge size plus base pages
+multi_size_unaligned,0,31,5,6.2000,16,31,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,31,5,6.2000,16,31,0,multi-size with absolute virtual alignment
+binary_adaptive,0,31,5,6.2000,16,31,0,xor + msb + region metadata lookup
+fixed,0,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,32,32,1.0000,1,32,0,single huge size plus base pages
+multi_size_unaligned,0,32,1,32.0000,32,32,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,32,1,32.0000,32,32,0,multi-size with absolute virtual alignment
+binary_adaptive,0,32,1,32.0000,32,32,0,xor + msb + region metadata lookup
+fixed,0,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,33,33,1.0000,1,33,0,single huge size plus base pages
+multi_size_unaligned,0,33,2,16.5000,32,33,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,33,2,16.5000,32,33,0,multi-size with absolute virtual alignment
+binary_adaptive,0,33,2,16.5000,32,33,0,xor + msb + region metadata lookup
+fixed,0,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,63,63,1.0000,1,63,0,single huge size plus base pages
+multi_size_unaligned,0,63,6,10.5000,32,63,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,63,6,10.5000,32,63,0,multi-size with absolute virtual alignment
+binary_adaptive,0,63,6,10.5000,32,63,0,xor + msb + region metadata lookup
+fixed,0,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,64,64,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,64,1,64.0000,64,64,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,64,1,64.0000,64,64,0,multi-size with absolute virtual alignment
+binary_adaptive,0,64,1,64.0000,64,64,0,xor + msb + region metadata lookup
+fixed,0,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,65,65,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,65,2,32.5000,64,65,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,65,2,32.5000,64,65,0,multi-size with absolute virtual alignment
+binary_adaptive,0,65,2,32.5000,64,65,0,xor + msb + region metadata lookup
+fixed,0,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,127,127,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,127,7,18.1429,64,127,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,127,7,18.1429,64,127,0,multi-size with absolute virtual alignment
+binary_adaptive,0,127,7,18.1429,64,127,0,xor + msb + region metadata lookup
+fixed,0,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,128,128,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,128,1,128.0000,128,128,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,128,1,128.0000,128,128,0,multi-size with absolute virtual alignment
+binary_adaptive,0,128,1,128.0000,128,128,0,xor + msb + region metadata lookup
+fixed,0,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,129,129,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,129,2,64.5000,128,129,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,129,2,64.5000,128,129,0,multi-size with absolute virtual alignment
+binary_adaptive,0,129,2,64.5000,128,129,0,xor + msb + region metadata lookup
+fixed,0,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,255,255,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,255,8,31.8750,128,255,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,255,8,31.8750,128,255,0,multi-size with absolute virtual alignment
+binary_adaptive,0,255,8,31.8750,128,255,0,xor + msb + region metadata lookup
+fixed,0,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,256,256,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,256,1,256.0000,256,256,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,256,1,256.0000,256,256,0,multi-size with absolute virtual alignment
+binary_adaptive,0,256,1,256.0000,256,256,0,xor + msb + region metadata lookup
+fixed,0,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,257,257,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,257,2,128.5000,256,257,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,257,2,128.5000,256,257,0,multi-size with absolute virtual alignment
+binary_adaptive,0,257,2,128.5000,256,257,0,xor + msb + region metadata lookup
+fixed,0,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,511,511,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,0,511,9,56.7778,256,511,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,511,9,56.7778,256,511,0,multi-size with absolute virtual alignment
+binary_adaptive,0,511,9,56.7778,256,511,0,xor + msb + region metadata lookup
+fixed,0,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,512,1,512.0000,512,512,0,single huge size plus base pages
+multi_size_unaligned,0,512,1,512.0000,512,512,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,512,1,512.0000,512,512,0,multi-size with absolute virtual alignment
+binary_adaptive,0,512,1,512.0000,512,512,0,xor + msb + region metadata lookup
+fixed,0,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,513,2,256.5000,512,513,0,single huge size plus base pages
+multi_size_unaligned,0,513,2,256.5000,512,513,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,513,2,256.5000,512,513,0,multi-size with absolute virtual alignment
+binary_adaptive,0,513,2,256.5000,512,513,0,xor + msb + region metadata lookup
+fixed,0,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,1000,489,2.0450,512,575,0,single huge size plus base pages
+multi_size_unaligned,0,1000,6,166.6667,512,1000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,1000,6,166.6667,512,1000,0,multi-size with absolute virtual alignment
+binary_adaptive,0,1000,6,166.6667,512,1000,0,xor + msb + region metadata lookup
+fixed,0,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,1024,2,512.0000,512,1024,0,single huge size plus base pages
+multi_size_unaligned,0,1024,2,512.0000,512,1024,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,1024,2,512.0000,512,1024,0,multi-size with absolute virtual alignment
+binary_adaptive,0,1024,1,1024.0000,1024,1024,0,xor + msb + region metadata lookup
+fixed,0,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,2048,4,512.0000,512,2048,0,single huge size plus base pages
+multi_size_unaligned,0,2048,4,512.0000,512,2048,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,2048,4,512.0000,512,2048,0,multi-size with absolute virtual alignment
+binary_adaptive,0,2048,1,2048.0000,2048,2048,0,xor + msb + region metadata lookup
+fixed,0,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,4096,8,512.0000,512,4096,0,single huge size plus base pages
+multi_size_unaligned,0,4096,8,512.0000,512,4096,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,4096,8,512.0000,512,4096,0,multi-size with absolute virtual alignment
+binary_adaptive,0,4096,1,4096.0000,4096,4096,0,xor + msb + region metadata lookup
+fixed,0,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,8192,16,512.0000,512,8192,0,single huge size plus base pages
+multi_size_unaligned,0,8192,16,512.0000,512,8192,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,8192,16,512.0000,512,8192,0,multi-size with absolute virtual alignment
+binary_adaptive,0,8192,1,8192.0000,8192,8192,0,xor + msb + region metadata lookup
+fixed,0,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,0,10000,291,34.3643,512,9773,0,single huge size plus base pages
+multi_size_unaligned,0,10000,21,476.1905,512,10000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,0,10000,21,476.1905,512,10000,0,multi-size with absolute virtual alignment
+binary_adaptive,0,10000,5,2000.0000,8192,10000,0,xor + msb + region metadata lookup
+fixed,1,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,1,1,1.0000,1,1,0,single huge size plus base pages
+multi_size_unaligned,1,1,1,1.0000,1,1,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,1,1,1.0000,1,1,0,multi-size with absolute virtual alignment
+binary_adaptive,1,1,1,1.0000,1,1,0,xor + msb + region metadata lookup
+fixed,1,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,2,2,1.0000,1,2,0,single huge size plus base pages
+multi_size_unaligned,1,2,1,2.0000,2,2,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,2,2,1.0000,1,2,0,multi-size with absolute virtual alignment
+binary_adaptive,1,2,1,2.0000,2,2,0,xor + msb + region metadata lookup
+fixed,1,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,3,3,1.0000,1,3,0,single huge size plus base pages
+multi_size_unaligned,1,3,2,1.5000,2,3,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,3,2,1.5000,2,3,0,multi-size with absolute virtual alignment
+binary_adaptive,1,3,2,1.5000,2,3,0,xor + msb + region metadata lookup
+fixed,1,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,4,4,1.0000,1,4,0,single huge size plus base pages
+multi_size_unaligned,1,4,1,4.0000,4,4,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,4,3,1.3333,2,4,0,multi-size with absolute virtual alignment
+binary_adaptive,1,4,1,4.0000,4,4,0,xor + msb + region metadata lookup
+fixed,1,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,5,5,1.0000,1,5,0,single huge size plus base pages
+multi_size_unaligned,1,5,2,2.5000,4,5,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,5,3,1.6667,2,5,0,multi-size with absolute virtual alignment
+binary_adaptive,1,5,2,2.5000,4,5,0,xor + msb + region metadata lookup
+fixed,1,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,7,7,1.0000,1,7,0,single huge size plus base pages
+multi_size_unaligned,1,7,3,2.3333,4,7,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,7,3,2.3333,4,7,0,multi-size with absolute virtual alignment
+binary_adaptive,1,7,3,2.3333,4,7,0,xor + msb + region metadata lookup
+fixed,1,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,8,8,1.0000,1,8,0,single huge size plus base pages
+multi_size_unaligned,1,8,1,8.0000,8,8,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,8,4,2.0000,4,8,0,multi-size with absolute virtual alignment
+binary_adaptive,1,8,1,8.0000,8,8,0,xor + msb + region metadata lookup
+fixed,1,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,9,9,1.0000,1,9,0,single huge size plus base pages
+multi_size_unaligned,1,9,2,4.5000,8,9,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,9,4,2.2500,4,9,0,multi-size with absolute virtual alignment
+binary_adaptive,1,9,2,4.5000,8,9,0,xor + msb + region metadata lookup
+fixed,1,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,13,13,1.0000,1,13,0,single huge size plus base pages
+multi_size_unaligned,1,13,3,4.3333,8,13,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,13,5,2.6000,4,13,0,multi-size with absolute virtual alignment
+binary_adaptive,1,13,3,4.3333,8,13,0,xor + msb + region metadata lookup
+fixed,1,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,16,16,1.0000,1,16,0,single huge size plus base pages
+multi_size_unaligned,1,16,1,16.0000,16,16,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,16,5,3.2000,8,16,0,multi-size with absolute virtual alignment
+binary_adaptive,1,16,1,16.0000,16,16,0,xor + msb + region metadata lookup
+fixed,1,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,19,19,1.0000,1,19,0,single huge size plus base pages
+multi_size_unaligned,1,19,3,6.3333,16,19,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,19,5,3.8000,8,19,0,multi-size with absolute virtual alignment
+binary_adaptive,1,19,3,6.3333,16,19,0,xor + msb + region metadata lookup
+fixed,1,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,31,31,1.0000,1,31,0,single huge size plus base pages
+multi_size_unaligned,1,31,5,6.2000,16,31,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,31,5,6.2000,16,31,0,multi-size with absolute virtual alignment
+binary_adaptive,1,31,5,6.2000,16,31,0,xor + msb + region metadata lookup
+fixed,1,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,32,32,1.0000,1,32,0,single huge size plus base pages
+multi_size_unaligned,1,32,1,32.0000,32,32,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,32,6,5.3333,16,32,0,multi-size with absolute virtual alignment
+binary_adaptive,1,32,1,32.0000,32,32,0,xor + msb + region metadata lookup
+fixed,1,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,33,33,1.0000,1,33,0,single huge size plus base pages
+multi_size_unaligned,1,33,2,16.5000,32,33,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,33,6,5.5000,16,33,0,multi-size with absolute virtual alignment
+binary_adaptive,1,33,2,16.5000,32,33,0,xor + msb + region metadata lookup
+fixed,1,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,63,63,1.0000,1,63,0,single huge size plus base pages
+multi_size_unaligned,1,63,6,10.5000,32,63,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,63,6,10.5000,32,63,0,multi-size with absolute virtual alignment
+binary_adaptive,1,63,6,10.5000,32,63,0,xor + msb + region metadata lookup
+fixed,1,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,64,64,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,64,1,64.0000,64,64,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,64,7,9.1429,32,64,0,multi-size with absolute virtual alignment
+binary_adaptive,1,64,1,64.0000,64,64,0,xor + msb + region metadata lookup
+fixed,1,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,65,65,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,65,2,32.5000,64,65,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,65,7,9.2857,32,65,0,multi-size with absolute virtual alignment
+binary_adaptive,1,65,2,32.5000,64,65,0,xor + msb + region metadata lookup
+fixed,1,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,127,127,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,127,7,18.1429,64,127,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,127,7,18.1429,64,127,0,multi-size with absolute virtual alignment
+binary_adaptive,1,127,7,18.1429,64,127,0,xor + msb + region metadata lookup
+fixed,1,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,128,128,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,128,1,128.0000,128,128,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,128,8,16.0000,64,128,0,multi-size with absolute virtual alignment
+binary_adaptive,1,128,1,128.0000,128,128,0,xor + msb + region metadata lookup
+fixed,1,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,129,129,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,129,2,64.5000,128,129,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,129,8,16.1250,64,129,0,multi-size with absolute virtual alignment
+binary_adaptive,1,129,2,64.5000,128,129,0,xor + msb + region metadata lookup
+fixed,1,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,255,255,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,255,8,31.8750,128,255,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,255,8,31.8750,128,255,0,multi-size with absolute virtual alignment
+binary_adaptive,1,255,8,31.8750,128,255,0,xor + msb + region metadata lookup
+fixed,1,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,256,256,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,256,1,256.0000,256,256,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,256,9,28.4444,128,256,0,multi-size with absolute virtual alignment
+binary_adaptive,1,256,1,256.0000,256,256,0,xor + msb + region metadata lookup
+fixed,1,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,257,257,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,257,2,128.5000,256,257,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,257,9,28.5556,128,257,0,multi-size with absolute virtual alignment
+binary_adaptive,1,257,2,128.5000,256,257,0,xor + msb + region metadata lookup
+fixed,1,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,511,511,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,1,511,9,56.7778,256,511,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,511,9,56.7778,256,511,0,multi-size with absolute virtual alignment
+binary_adaptive,1,511,9,56.7778,256,511,0,xor + msb + region metadata lookup
+fixed,1,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,512,1,512.0000,512,512,0,single huge size plus base pages
+multi_size_unaligned,1,512,1,512.0000,512,512,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,512,10,51.2000,256,512,0,multi-size with absolute virtual alignment
+binary_adaptive,1,512,1,512.0000,512,512,0,xor + msb + region metadata lookup
+fixed,1,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,513,2,256.5000,512,513,0,single huge size plus base pages
+multi_size_unaligned,1,513,2,256.5000,512,513,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,513,10,51.3000,256,513,0,multi-size with absolute virtual alignment
+binary_adaptive,1,513,2,256.5000,512,513,0,xor + msb + region metadata lookup
+fixed,1,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,1000,489,2.0450,512,575,0,single huge size plus base pages
+multi_size_unaligned,1,1000,6,166.6667,512,1000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,1000,15,66.6667,256,1000,0,multi-size with absolute virtual alignment
+binary_adaptive,1,1000,6,166.6667,512,1000,0,xor + msb + region metadata lookup
+fixed,1,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,1024,2,512.0000,512,1024,0,single huge size plus base pages
+multi_size_unaligned,1,1024,2,512.0000,512,1024,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,1024,11,93.0909,512,1024,0,multi-size with absolute virtual alignment
+binary_adaptive,1,1024,1,1024.0000,1024,1024,0,xor + msb + region metadata lookup
+fixed,1,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,2048,4,512.0000,512,2048,0,single huge size plus base pages
+multi_size_unaligned,1,2048,4,512.0000,512,2048,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,2048,13,157.5385,512,2048,0,multi-size with absolute virtual alignment
+binary_adaptive,1,2048,1,2048.0000,2048,2048,0,xor + msb + region metadata lookup
+fixed,1,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,4096,8,512.0000,512,4096,0,single huge size plus base pages
+multi_size_unaligned,1,4096,8,512.0000,512,4096,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,4096,17,240.9412,512,4096,0,multi-size with absolute virtual alignment
+binary_adaptive,1,4096,1,4096.0000,4096,4096,0,xor + msb + region metadata lookup
+fixed,1,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,8192,16,512.0000,512,8192,0,single huge size plus base pages
+multi_size_unaligned,1,8192,16,512.0000,512,8192,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,8192,25,327.6800,512,8192,0,multi-size with absolute virtual alignment
+binary_adaptive,1,8192,1,8192.0000,8192,8192,0,xor + msb + region metadata lookup
+fixed,1,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,10000,291,34.3643,512,9773,0,single huge size plus base pages
+multi_size_unaligned,1,10000,21,476.1905,512,10000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,1,10000,30,333.3333,512,10000,0,multi-size with absolute virtual alignment
+binary_adaptive,1,10000,5,2000.0000,8192,10000,0,xor + msb + region metadata lookup
+fixed,7,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,1,1,1.0000,1,1,0,single huge size plus base pages
+multi_size_unaligned,7,1,1,1.0000,1,1,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,1,1,1.0000,1,1,0,multi-size with absolute virtual alignment
+binary_adaptive,7,1,1,1.0000,1,1,0,xor + msb + region metadata lookup
+fixed,7,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,2,2,1.0000,1,2,0,single huge size plus base pages
+multi_size_unaligned,7,2,1,2.0000,2,2,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,2,2,1.0000,1,2,0,multi-size with absolute virtual alignment
+binary_adaptive,7,2,1,2.0000,2,2,0,xor + msb + region metadata lookup
+fixed,7,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,3,3,1.0000,1,3,0,single huge size plus base pages
+multi_size_unaligned,7,3,2,1.5000,2,3,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,3,2,1.5000,2,3,0,multi-size with absolute virtual alignment
+binary_adaptive,7,3,2,1.5000,2,3,0,xor + msb + region metadata lookup
+fixed,7,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,4,4,1.0000,1,4,0,single huge size plus base pages
+multi_size_unaligned,7,4,1,4.0000,4,4,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,4,3,1.3333,2,4,0,multi-size with absolute virtual alignment
+binary_adaptive,7,4,1,4.0000,4,4,0,xor + msb + region metadata lookup
+fixed,7,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,5,5,1.0000,1,5,0,single huge size plus base pages
+multi_size_unaligned,7,5,2,2.5000,4,5,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,5,2,2.5000,4,5,0,multi-size with absolute virtual alignment
+binary_adaptive,7,5,2,2.5000,4,5,0,xor + msb + region metadata lookup
+fixed,7,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,7,7,1.0000,1,7,0,single huge size plus base pages
+multi_size_unaligned,7,7,3,2.3333,4,7,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,7,3,2.3333,4,7,0,multi-size with absolute virtual alignment
+binary_adaptive,7,7,3,2.3333,4,7,0,xor + msb + region metadata lookup
+fixed,7,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,8,8,1.0000,1,8,0,single huge size plus base pages
+multi_size_unaligned,7,8,1,8.0000,8,8,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,8,4,2.0000,4,8,0,multi-size with absolute virtual alignment
+binary_adaptive,7,8,1,8.0000,8,8,0,xor + msb + region metadata lookup
+fixed,7,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,9,9,1.0000,1,9,0,single huge size plus base pages
+multi_size_unaligned,7,9,2,4.5000,8,9,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,9,2,4.5000,8,9,0,multi-size with absolute virtual alignment
+binary_adaptive,7,9,2,4.5000,8,9,0,xor + msb + region metadata lookup
+fixed,7,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,13,13,1.0000,1,13,0,single huge size plus base pages
+multi_size_unaligned,7,13,3,4.3333,8,13,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,13,3,4.3333,8,13,0,multi-size with absolute virtual alignment
+binary_adaptive,7,13,3,4.3333,8,13,0,xor + msb + region metadata lookup
+fixed,7,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,16,16,1.0000,1,16,0,single huge size plus base pages
+multi_size_unaligned,7,16,1,16.0000,16,16,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,16,5,3.2000,8,16,0,multi-size with absolute virtual alignment
+binary_adaptive,7,16,1,16.0000,16,16,0,xor + msb + region metadata lookup
+fixed,7,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,19,19,1.0000,1,19,0,single huge size plus base pages
+multi_size_unaligned,7,19,3,6.3333,16,19,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,19,4,4.7500,8,19,0,multi-size with absolute virtual alignment
+binary_adaptive,7,19,3,6.3333,16,19,0,xor + msb + region metadata lookup
+fixed,7,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,31,31,1.0000,1,31,0,single huge size plus base pages
+multi_size_unaligned,7,31,5,6.2000,16,31,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,31,5,6.2000,16,31,0,multi-size with absolute virtual alignment
+binary_adaptive,7,31,5,6.2000,16,31,0,xor + msb + region metadata lookup
+fixed,7,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,32,32,1.0000,1,32,0,single huge size plus base pages
+multi_size_unaligned,7,32,1,32.0000,32,32,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,32,6,5.3333,16,32,0,multi-size with absolute virtual alignment
+binary_adaptive,7,32,1,32.0000,32,32,0,xor + msb + region metadata lookup
+fixed,7,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,33,33,1.0000,1,33,0,single huge size plus base pages
+multi_size_unaligned,7,33,2,16.5000,32,33,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,33,4,8.2500,16,33,0,multi-size with absolute virtual alignment
+binary_adaptive,7,33,2,16.5000,32,33,0,xor + msb + region metadata lookup
+fixed,7,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,63,63,1.0000,1,63,0,single huge size plus base pages
+multi_size_unaligned,7,63,6,10.5000,32,63,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,63,6,10.5000,32,63,0,multi-size with absolute virtual alignment
+binary_adaptive,7,63,6,10.5000,32,63,0,xor + msb + region metadata lookup
+fixed,7,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,64,64,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,64,1,64.0000,64,64,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,64,7,9.1429,32,64,0,multi-size with absolute virtual alignment
+binary_adaptive,7,64,1,64.0000,64,64,0,xor + msb + region metadata lookup
+fixed,7,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,65,65,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,65,2,32.5000,64,65,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,65,5,13.0000,32,65,0,multi-size with absolute virtual alignment
+binary_adaptive,7,65,2,32.5000,64,65,0,xor + msb + region metadata lookup
+fixed,7,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,127,127,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,127,7,18.1429,64,127,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,127,7,18.1429,64,127,0,multi-size with absolute virtual alignment
+binary_adaptive,7,127,7,18.1429,64,127,0,xor + msb + region metadata lookup
+fixed,7,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,128,128,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,128,1,128.0000,128,128,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,128,8,16.0000,64,128,0,multi-size with absolute virtual alignment
+binary_adaptive,7,128,1,128.0000,128,128,0,xor + msb + region metadata lookup
+fixed,7,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,129,129,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,129,2,64.5000,128,129,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,129,6,21.5000,64,129,0,multi-size with absolute virtual alignment
+binary_adaptive,7,129,2,64.5000,128,129,0,xor + msb + region metadata lookup
+fixed,7,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,255,255,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,255,8,31.8750,128,255,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,255,8,31.8750,128,255,0,multi-size with absolute virtual alignment
+binary_adaptive,7,255,8,31.8750,128,255,0,xor + msb + region metadata lookup
+fixed,7,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,256,256,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,256,1,256.0000,256,256,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,256,9,28.4444,128,256,0,multi-size with absolute virtual alignment
+binary_adaptive,7,256,1,256.0000,256,256,0,xor + msb + region metadata lookup
+fixed,7,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,257,257,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,257,2,128.5000,256,257,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,257,7,36.7143,128,257,0,multi-size with absolute virtual alignment
+binary_adaptive,7,257,2,128.5000,256,257,0,xor + msb + region metadata lookup
+fixed,7,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,511,511,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,7,511,9,56.7778,256,511,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,511,9,56.7778,256,511,0,multi-size with absolute virtual alignment
+binary_adaptive,7,511,9,56.7778,256,511,0,xor + msb + region metadata lookup
+fixed,7,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,512,1,512.0000,512,512,0,single huge size plus base pages
+multi_size_unaligned,7,512,1,512.0000,512,512,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,512,10,51.2000,256,512,0,multi-size with absolute virtual alignment
+binary_adaptive,7,512,1,512.0000,512,512,0,xor + msb + region metadata lookup
+fixed,7,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,513,2,256.5000,512,513,0,single huge size plus base pages
+multi_size_unaligned,7,513,2,256.5000,512,513,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,513,8,64.1250,256,513,0,multi-size with absolute virtual alignment
+binary_adaptive,7,513,2,256.5000,512,513,0,xor + msb + region metadata lookup
+fixed,7,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,1000,489,2.0450,512,575,0,single huge size plus base pages
+multi_size_unaligned,7,1000,6,166.6667,512,1000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,1000,15,66.6667,256,1000,0,multi-size with absolute virtual alignment
+binary_adaptive,7,1000,6,166.6667,512,1000,0,xor + msb + region metadata lookup
+fixed,7,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,1024,2,512.0000,512,1024,0,single huge size plus base pages
+multi_size_unaligned,7,1024,2,512.0000,512,1024,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,1024,11,93.0909,512,1024,0,multi-size with absolute virtual alignment
+binary_adaptive,7,1024,1,1024.0000,1024,1024,0,xor + msb + region metadata lookup
+fixed,7,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,2048,4,512.0000,512,2048,0,single huge size plus base pages
+multi_size_unaligned,7,2048,4,512.0000,512,2048,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,2048,13,157.5385,512,2048,0,multi-size with absolute virtual alignment
+binary_adaptive,7,2048,1,2048.0000,2048,2048,0,xor + msb + region metadata lookup
+fixed,7,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,4096,8,512.0000,512,4096,0,single huge size plus base pages
+multi_size_unaligned,7,4096,8,512.0000,512,4096,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,4096,17,240.9412,512,4096,0,multi-size with absolute virtual alignment
+binary_adaptive,7,4096,1,4096.0000,4096,4096,0,xor + msb + region metadata lookup
+fixed,7,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,8192,16,512.0000,512,8192,0,single huge size plus base pages
+multi_size_unaligned,7,8192,16,512.0000,512,8192,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,8192,25,327.6800,512,8192,0,multi-size with absolute virtual alignment
+binary_adaptive,7,8192,1,8192.0000,8192,8192,0,xor + msb + region metadata lookup
+fixed,7,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,10000,291,34.3643,512,9773,0,single huge size plus base pages
+multi_size_unaligned,7,10000,21,476.1905,512,10000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,7,10000,30,333.3333,512,10000,0,multi-size with absolute virtual alignment
+binary_adaptive,7,10000,5,2000.0000,8192,10000,0,xor + msb + region metadata lookup
+fixed,13,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,1,1,1.0000,1,1,0,single huge size plus base pages
+multi_size_unaligned,13,1,1,1.0000,1,1,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,1,1,1.0000,1,1,0,multi-size with absolute virtual alignment
+binary_adaptive,13,1,1,1.0000,1,1,0,xor + msb + region metadata lookup
+fixed,13,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,2,2,1.0000,1,2,0,single huge size plus base pages
+multi_size_unaligned,13,2,1,2.0000,2,2,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,2,2,1.0000,1,2,0,multi-size with absolute virtual alignment
+binary_adaptive,13,2,1,2.0000,2,2,0,xor + msb + region metadata lookup
+fixed,13,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,3,3,1.0000,1,3,0,single huge size plus base pages
+multi_size_unaligned,13,3,2,1.5000,2,3,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,3,2,1.5000,2,3,0,multi-size with absolute virtual alignment
+binary_adaptive,13,3,2,1.5000,2,3,0,xor + msb + region metadata lookup
+fixed,13,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,4,4,1.0000,1,4,0,single huge size plus base pages
+multi_size_unaligned,13,4,1,4.0000,4,4,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,4,3,1.3333,2,4,0,multi-size with absolute virtual alignment
+binary_adaptive,13,4,1,4.0000,4,4,0,xor + msb + region metadata lookup
+fixed,13,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,5,5,1.0000,1,5,0,single huge size plus base pages
+multi_size_unaligned,13,5,2,2.5000,4,5,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,5,3,1.6667,2,5,0,multi-size with absolute virtual alignment
+binary_adaptive,13,5,2,2.5000,4,5,0,xor + msb + region metadata lookup
+fixed,13,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,7,7,1.0000,1,7,0,single huge size plus base pages
+multi_size_unaligned,13,7,3,2.3333,4,7,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,7,3,2.3333,4,7,0,multi-size with absolute virtual alignment
+binary_adaptive,13,7,3,2.3333,4,7,0,xor + msb + region metadata lookup
+fixed,13,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,8,8,1.0000,1,8,0,single huge size plus base pages
+multi_size_unaligned,13,8,1,8.0000,8,8,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,8,4,2.0000,4,8,0,multi-size with absolute virtual alignment
+binary_adaptive,13,8,1,8.0000,8,8,0,xor + msb + region metadata lookup
+fixed,13,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,9,9,1.0000,1,9,0,single huge size plus base pages
+multi_size_unaligned,13,9,2,4.5000,8,9,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,9,4,2.2500,4,9,0,multi-size with absolute virtual alignment
+binary_adaptive,13,9,2,4.5000,8,9,0,xor + msb + region metadata lookup
+fixed,13,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,13,13,1.0000,1,13,0,single huge size plus base pages
+multi_size_unaligned,13,13,3,4.3333,8,13,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,13,4,3.2500,8,13,0,multi-size with absolute virtual alignment
+binary_adaptive,13,13,3,4.3333,8,13,0,xor + msb + region metadata lookup
+fixed,13,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,16,16,1.0000,1,16,0,single huge size plus base pages
+multi_size_unaligned,13,16,1,16.0000,16,16,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,16,5,3.2000,8,16,0,multi-size with absolute virtual alignment
+binary_adaptive,13,16,1,16.0000,16,16,0,xor + msb + region metadata lookup
+fixed,13,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,19,19,1.0000,1,19,0,single huge size plus base pages
+multi_size_unaligned,13,19,3,6.3333,16,19,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,19,3,6.3333,16,19,0,multi-size with absolute virtual alignment
+binary_adaptive,13,19,3,6.3333,16,19,0,xor + msb + region metadata lookup
+fixed,13,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,31,31,1.0000,1,31,0,single huge size plus base pages
+multi_size_unaligned,13,31,5,6.2000,16,31,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,31,5,6.2000,16,31,0,multi-size with absolute virtual alignment
+binary_adaptive,13,31,5,6.2000,16,31,0,xor + msb + region metadata lookup
+fixed,13,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,32,32,1.0000,1,32,0,single huge size plus base pages
+multi_size_unaligned,13,32,1,32.0000,32,32,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,32,6,5.3333,16,32,0,multi-size with absolute virtual alignment
+binary_adaptive,13,32,1,32.0000,32,32,0,xor + msb + region metadata lookup
+fixed,13,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,33,33,1.0000,1,33,0,single huge size plus base pages
+multi_size_unaligned,13,33,2,16.5000,32,33,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,33,6,5.5000,16,33,0,multi-size with absolute virtual alignment
+binary_adaptive,13,33,2,16.5000,32,33,0,xor + msb + region metadata lookup
+fixed,13,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,63,63,1.0000,1,63,0,single huge size plus base pages
+multi_size_unaligned,13,63,6,10.5000,32,63,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,63,6,10.5000,32,63,0,multi-size with absolute virtual alignment
+binary_adaptive,13,63,6,10.5000,32,63,0,xor + msb + region metadata lookup
+fixed,13,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,64,64,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,64,1,64.0000,64,64,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,64,7,9.1429,32,64,0,multi-size with absolute virtual alignment
+binary_adaptive,13,64,1,64.0000,64,64,0,xor + msb + region metadata lookup
+fixed,13,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,65,65,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,65,2,32.5000,64,65,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,65,7,9.2857,32,65,0,multi-size with absolute virtual alignment
+binary_adaptive,13,65,2,32.5000,64,65,0,xor + msb + region metadata lookup
+fixed,13,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,127,127,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,127,7,18.1429,64,127,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,127,7,18.1429,64,127,0,multi-size with absolute virtual alignment
+binary_adaptive,13,127,7,18.1429,64,127,0,xor + msb + region metadata lookup
+fixed,13,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,128,128,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,128,1,128.0000,128,128,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,128,8,16.0000,64,128,0,multi-size with absolute virtual alignment
+binary_adaptive,13,128,1,128.0000,128,128,0,xor + msb + region metadata lookup
+fixed,13,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,129,129,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,129,2,64.5000,128,129,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,129,8,16.1250,64,129,0,multi-size with absolute virtual alignment
+binary_adaptive,13,129,2,64.5000,128,129,0,xor + msb + region metadata lookup
+fixed,13,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,255,255,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,255,8,31.8750,128,255,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,255,8,31.8750,128,255,0,multi-size with absolute virtual alignment
+binary_adaptive,13,255,8,31.8750,128,255,0,xor + msb + region metadata lookup
+fixed,13,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,256,256,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,256,1,256.0000,256,256,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,256,9,28.4444,128,256,0,multi-size with absolute virtual alignment
+binary_adaptive,13,256,1,256.0000,256,256,0,xor + msb + region metadata lookup
+fixed,13,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,257,257,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,257,2,128.5000,256,257,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,257,9,28.5556,128,257,0,multi-size with absolute virtual alignment
+binary_adaptive,13,257,2,128.5000,256,257,0,xor + msb + region metadata lookup
+fixed,13,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,511,511,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,13,511,9,56.7778,256,511,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,511,9,56.7778,256,511,0,multi-size with absolute virtual alignment
+binary_adaptive,13,511,9,56.7778,256,511,0,xor + msb + region metadata lookup
+fixed,13,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,512,1,512.0000,512,512,0,single huge size plus base pages
+multi_size_unaligned,13,512,1,512.0000,512,512,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,512,10,51.2000,256,512,0,multi-size with absolute virtual alignment
+binary_adaptive,13,512,1,512.0000,512,512,0,xor + msb + region metadata lookup
+fixed,13,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,513,2,256.5000,512,513,0,single huge size plus base pages
+multi_size_unaligned,13,513,2,256.5000,512,513,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,513,10,51.3000,256,513,0,multi-size with absolute virtual alignment
+binary_adaptive,13,513,2,256.5000,512,513,0,xor + msb + region metadata lookup
+fixed,13,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,1000,489,2.0450,512,575,0,single huge size plus base pages
+multi_size_unaligned,13,1000,6,166.6667,512,1000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,1000,14,71.4286,256,1000,0,multi-size with absolute virtual alignment
+binary_adaptive,13,1000,6,166.6667,512,1000,0,xor + msb + region metadata lookup
+fixed,13,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,1024,2,512.0000,512,1024,0,single huge size plus base pages
+multi_size_unaligned,13,1024,2,512.0000,512,1024,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,1024,11,93.0909,512,1024,0,multi-size with absolute virtual alignment
+binary_adaptive,13,1024,1,1024.0000,1024,1024,0,xor + msb + region metadata lookup
+fixed,13,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,2048,4,512.0000,512,2048,0,single huge size plus base pages
+multi_size_unaligned,13,2048,4,512.0000,512,2048,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,2048,13,157.5385,512,2048,0,multi-size with absolute virtual alignment
+binary_adaptive,13,2048,1,2048.0000,2048,2048,0,xor + msb + region metadata lookup
+fixed,13,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,4096,8,512.0000,512,4096,0,single huge size plus base pages
+multi_size_unaligned,13,4096,8,512.0000,512,4096,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,4096,17,240.9412,512,4096,0,multi-size with absolute virtual alignment
+binary_adaptive,13,4096,1,4096.0000,4096,4096,0,xor + msb + region metadata lookup
+fixed,13,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,8192,16,512.0000,512,8192,0,single huge size plus base pages
+multi_size_unaligned,13,8192,16,512.0000,512,8192,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,8192,25,327.6800,512,8192,0,multi-size with absolute virtual alignment
+binary_adaptive,13,8192,1,8192.0000,8192,8192,0,xor + msb + region metadata lookup
+fixed,13,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,10000,291,34.3643,512,9773,0,single huge size plus base pages
+multi_size_unaligned,13,10000,21,476.1905,512,10000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,13,10000,30,333.3333,512,10000,0,multi-size with absolute virtual alignment
+binary_adaptive,13,10000,5,2000.0000,8192,10000,0,xor + msb + region metadata lookup
+fixed,64,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,1,1,1.0000,1,1,0,single huge size plus base pages
+multi_size_unaligned,64,1,1,1.0000,1,1,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,1,1,1.0000,1,1,0,multi-size with absolute virtual alignment
+binary_adaptive,64,1,1,1.0000,1,1,0,xor + msb + region metadata lookup
+fixed,64,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,2,2,1.0000,1,2,0,single huge size plus base pages
+multi_size_unaligned,64,2,1,2.0000,2,2,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,2,1,2.0000,2,2,0,multi-size with absolute virtual alignment
+binary_adaptive,64,2,1,2.0000,2,2,0,xor + msb + region metadata lookup
+fixed,64,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,3,3,1.0000,1,3,0,single huge size plus base pages
+multi_size_unaligned,64,3,2,1.5000,2,3,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,3,2,1.5000,2,3,0,multi-size with absolute virtual alignment
+binary_adaptive,64,3,2,1.5000,2,3,0,xor + msb + region metadata lookup
+fixed,64,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,4,4,1.0000,1,4,0,single huge size plus base pages
+multi_size_unaligned,64,4,1,4.0000,4,4,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,4,1,4.0000,4,4,0,multi-size with absolute virtual alignment
+binary_adaptive,64,4,1,4.0000,4,4,0,xor + msb + region metadata lookup
+fixed,64,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,5,5,1.0000,1,5,0,single huge size plus base pages
+multi_size_unaligned,64,5,2,2.5000,4,5,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,5,2,2.5000,4,5,0,multi-size with absolute virtual alignment
+binary_adaptive,64,5,2,2.5000,4,5,0,xor + msb + region metadata lookup
+fixed,64,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,7,7,1.0000,1,7,0,single huge size plus base pages
+multi_size_unaligned,64,7,3,2.3333,4,7,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,7,3,2.3333,4,7,0,multi-size with absolute virtual alignment
+binary_adaptive,64,7,3,2.3333,4,7,0,xor + msb + region metadata lookup
+fixed,64,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,8,8,1.0000,1,8,0,single huge size plus base pages
+multi_size_unaligned,64,8,1,8.0000,8,8,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,8,1,8.0000,8,8,0,multi-size with absolute virtual alignment
+binary_adaptive,64,8,1,8.0000,8,8,0,xor + msb + region metadata lookup
+fixed,64,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,9,9,1.0000,1,9,0,single huge size plus base pages
+multi_size_unaligned,64,9,2,4.5000,8,9,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,9,2,4.5000,8,9,0,multi-size with absolute virtual alignment
+binary_adaptive,64,9,2,4.5000,8,9,0,xor + msb + region metadata lookup
+fixed,64,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,13,13,1.0000,1,13,0,single huge size plus base pages
+multi_size_unaligned,64,13,3,4.3333,8,13,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,13,3,4.3333,8,13,0,multi-size with absolute virtual alignment
+binary_adaptive,64,13,3,4.3333,8,13,0,xor + msb + region metadata lookup
+fixed,64,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,16,16,1.0000,1,16,0,single huge size plus base pages
+multi_size_unaligned,64,16,1,16.0000,16,16,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,16,1,16.0000,16,16,0,multi-size with absolute virtual alignment
+binary_adaptive,64,16,1,16.0000,16,16,0,xor + msb + region metadata lookup
+fixed,64,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,19,19,1.0000,1,19,0,single huge size plus base pages
+multi_size_unaligned,64,19,3,6.3333,16,19,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,19,3,6.3333,16,19,0,multi-size with absolute virtual alignment
+binary_adaptive,64,19,3,6.3333,16,19,0,xor + msb + region metadata lookup
+fixed,64,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,31,31,1.0000,1,31,0,single huge size plus base pages
+multi_size_unaligned,64,31,5,6.2000,16,31,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,31,5,6.2000,16,31,0,multi-size with absolute virtual alignment
+binary_adaptive,64,31,5,6.2000,16,31,0,xor + msb + region metadata lookup
+fixed,64,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,32,32,1.0000,1,32,0,single huge size plus base pages
+multi_size_unaligned,64,32,1,32.0000,32,32,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,32,1,32.0000,32,32,0,multi-size with absolute virtual alignment
+binary_adaptive,64,32,1,32.0000,32,32,0,xor + msb + region metadata lookup
+fixed,64,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,33,33,1.0000,1,33,0,single huge size plus base pages
+multi_size_unaligned,64,33,2,16.5000,32,33,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,33,2,16.5000,32,33,0,multi-size with absolute virtual alignment
+binary_adaptive,64,33,2,16.5000,32,33,0,xor + msb + region metadata lookup
+fixed,64,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,63,63,1.0000,1,63,0,single huge size plus base pages
+multi_size_unaligned,64,63,6,10.5000,32,63,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,63,6,10.5000,32,63,0,multi-size with absolute virtual alignment
+binary_adaptive,64,63,6,10.5000,32,63,0,xor + msb + region metadata lookup
+fixed,64,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,64,64,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,64,1,64.0000,64,64,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,64,1,64.0000,64,64,0,multi-size with absolute virtual alignment
+binary_adaptive,64,64,1,64.0000,64,64,0,xor + msb + region metadata lookup
+fixed,64,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,65,65,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,65,2,32.5000,64,65,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,65,2,32.5000,64,65,0,multi-size with absolute virtual alignment
+binary_adaptive,64,65,2,32.5000,64,65,0,xor + msb + region metadata lookup
+fixed,64,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,127,127,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,127,7,18.1429,64,127,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,127,7,18.1429,64,127,0,multi-size with absolute virtual alignment
+binary_adaptive,64,127,7,18.1429,64,127,0,xor + msb + region metadata lookup
+fixed,64,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,128,128,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,128,1,128.0000,128,128,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,128,2,64.0000,64,128,0,multi-size with absolute virtual alignment
+binary_adaptive,64,128,1,128.0000,128,128,0,xor + msb + region metadata lookup
+fixed,64,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,129,129,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,129,2,64.5000,128,129,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,129,3,43.0000,64,129,0,multi-size with absolute virtual alignment
+binary_adaptive,64,129,2,64.5000,128,129,0,xor + msb + region metadata lookup
+fixed,64,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,255,255,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,255,8,31.8750,128,255,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,255,8,31.8750,128,255,0,multi-size with absolute virtual alignment
+binary_adaptive,64,255,8,31.8750,128,255,0,xor + msb + region metadata lookup
+fixed,64,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,256,256,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,256,1,256.0000,256,256,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,256,3,85.3333,128,256,0,multi-size with absolute virtual alignment
+binary_adaptive,64,256,1,256.0000,256,256,0,xor + msb + region metadata lookup
+fixed,64,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,257,257,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,257,2,128.5000,256,257,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,257,4,64.2500,128,257,0,multi-size with absolute virtual alignment
+binary_adaptive,64,257,2,128.5000,256,257,0,xor + msb + region metadata lookup
+fixed,64,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,511,511,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,64,511,9,56.7778,256,511,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,511,9,56.7778,256,511,0,multi-size with absolute virtual alignment
+binary_adaptive,64,511,9,56.7778,256,511,0,xor + msb + region metadata lookup
+fixed,64,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,512,1,512.0000,512,512,0,single huge size plus base pages
+multi_size_unaligned,64,512,1,512.0000,512,512,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,512,4,128.0000,256,512,0,multi-size with absolute virtual alignment
+binary_adaptive,64,512,1,512.0000,512,512,0,xor + msb + region metadata lookup
+fixed,64,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,513,2,256.5000,512,513,0,single huge size plus base pages
+multi_size_unaligned,64,513,2,256.5000,512,513,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,513,5,102.6000,256,513,0,multi-size with absolute virtual alignment
+binary_adaptive,64,513,2,256.5000,512,513,0,xor + msb + region metadata lookup
+fixed,64,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,1000,489,2.0450,512,575,0,single huge size plus base pages
+multi_size_unaligned,64,1000,6,166.6667,512,1000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,1000,6,166.6667,512,1000,0,multi-size with absolute virtual alignment
+binary_adaptive,64,1000,6,166.6667,512,1000,0,xor + msb + region metadata lookup
+fixed,64,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,1024,2,512.0000,512,1024,0,single huge size plus base pages
+multi_size_unaligned,64,1024,2,512.0000,512,1024,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,1024,5,204.8000,512,1024,0,multi-size with absolute virtual alignment
+binary_adaptive,64,1024,1,1024.0000,1024,1024,0,xor + msb + region metadata lookup
+fixed,64,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,2048,4,512.0000,512,2048,0,single huge size plus base pages
+multi_size_unaligned,64,2048,4,512.0000,512,2048,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,2048,7,292.5714,512,2048,0,multi-size with absolute virtual alignment
+binary_adaptive,64,2048,1,2048.0000,2048,2048,0,xor + msb + region metadata lookup
+fixed,64,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,4096,8,512.0000,512,4096,0,single huge size plus base pages
+multi_size_unaligned,64,4096,8,512.0000,512,4096,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,4096,11,372.3636,512,4096,0,multi-size with absolute virtual alignment
+binary_adaptive,64,4096,1,4096.0000,4096,4096,0,xor + msb + region metadata lookup
+fixed,64,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,8192,16,512.0000,512,8192,0,single huge size plus base pages
+multi_size_unaligned,64,8192,16,512.0000,512,8192,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,8192,19,431.1579,512,8192,0,multi-size with absolute virtual alignment
+binary_adaptive,64,8192,1,8192.0000,8192,8192,0,xor + msb + region metadata lookup
+fixed,64,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,10000,291,34.3643,512,9773,0,single huge size plus base pages
+multi_size_unaligned,64,10000,21,476.1905,512,10000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,64,10000,24,416.6667,512,10000,0,multi-size with absolute virtual alignment
+binary_adaptive,64,10000,5,2000.0000,8192,10000,0,xor + msb + region metadata lookup
+fixed,255,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,1,1,1.0000,1,1,0,single huge size plus base pages
+multi_size_unaligned,255,1,1,1.0000,1,1,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,1,1,1.0000,1,1,0,multi-size with absolute virtual alignment
+binary_adaptive,255,1,1,1.0000,1,1,0,xor + msb + region metadata lookup
+fixed,255,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,2,2,1.0000,1,2,0,single huge size plus base pages
+multi_size_unaligned,255,2,1,2.0000,2,2,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,2,2,1.0000,1,2,0,multi-size with absolute virtual alignment
+binary_adaptive,255,2,1,2.0000,2,2,0,xor + msb + region metadata lookup
+fixed,255,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,3,3,1.0000,1,3,0,single huge size plus base pages
+multi_size_unaligned,255,3,2,1.5000,2,3,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,3,2,1.5000,2,3,0,multi-size with absolute virtual alignment
+binary_adaptive,255,3,2,1.5000,2,3,0,xor + msb + region metadata lookup
+fixed,255,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,4,4,1.0000,1,4,0,single huge size plus base pages
+multi_size_unaligned,255,4,1,4.0000,4,4,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,4,3,1.3333,2,4,0,multi-size with absolute virtual alignment
+binary_adaptive,255,4,1,4.0000,4,4,0,xor + msb + region metadata lookup
+fixed,255,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,5,5,1.0000,1,5,0,single huge size plus base pages
+multi_size_unaligned,255,5,2,2.5000,4,5,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,5,2,2.5000,4,5,0,multi-size with absolute virtual alignment
+binary_adaptive,255,5,2,2.5000,4,5,0,xor + msb + region metadata lookup
+fixed,255,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,7,7,1.0000,1,7,0,single huge size plus base pages
+multi_size_unaligned,255,7,3,2.3333,4,7,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,7,3,2.3333,4,7,0,multi-size with absolute virtual alignment
+binary_adaptive,255,7,3,2.3333,4,7,0,xor + msb + region metadata lookup
+fixed,255,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,8,8,1.0000,1,8,0,single huge size plus base pages
+multi_size_unaligned,255,8,1,8.0000,8,8,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,8,4,2.0000,4,8,0,multi-size with absolute virtual alignment
+binary_adaptive,255,8,1,8.0000,8,8,0,xor + msb + region metadata lookup
+fixed,255,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,9,9,1.0000,1,9,0,single huge size plus base pages
+multi_size_unaligned,255,9,2,4.5000,8,9,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,9,2,4.5000,8,9,0,multi-size with absolute virtual alignment
+binary_adaptive,255,9,2,4.5000,8,9,0,xor + msb + region metadata lookup
+fixed,255,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,13,13,1.0000,1,13,0,single huge size plus base pages
+multi_size_unaligned,255,13,3,4.3333,8,13,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,13,3,4.3333,8,13,0,multi-size with absolute virtual alignment
+binary_adaptive,255,13,3,4.3333,8,13,0,xor + msb + region metadata lookup
+fixed,255,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,16,16,1.0000,1,16,0,single huge size plus base pages
+multi_size_unaligned,255,16,1,16.0000,16,16,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,16,5,3.2000,8,16,0,multi-size with absolute virtual alignment
+binary_adaptive,255,16,1,16.0000,16,16,0,xor + msb + region metadata lookup
+fixed,255,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,19,19,1.0000,1,19,0,single huge size plus base pages
+multi_size_unaligned,255,19,3,6.3333,16,19,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,19,3,6.3333,16,19,0,multi-size with absolute virtual alignment
+binary_adaptive,255,19,3,6.3333,16,19,0,xor + msb + region metadata lookup
+fixed,255,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,31,31,1.0000,1,31,0,single huge size plus base pages
+multi_size_unaligned,255,31,5,6.2000,16,31,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,31,5,6.2000,16,31,0,multi-size with absolute virtual alignment
+binary_adaptive,255,31,5,6.2000,16,31,0,xor + msb + region metadata lookup
+fixed,255,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,32,32,1.0000,1,32,0,single huge size plus base pages
+multi_size_unaligned,255,32,1,32.0000,32,32,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,32,6,5.3333,16,32,0,multi-size with absolute virtual alignment
+binary_adaptive,255,32,1,32.0000,32,32,0,xor + msb + region metadata lookup
+fixed,255,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,33,33,1.0000,1,33,0,single huge size plus base pages
+multi_size_unaligned,255,33,2,16.5000,32,33,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,33,2,16.5000,32,33,0,multi-size with absolute virtual alignment
+binary_adaptive,255,33,2,16.5000,32,33,0,xor + msb + region metadata lookup
+fixed,255,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,63,63,1.0000,1,63,0,single huge size plus base pages
+multi_size_unaligned,255,63,6,10.5000,32,63,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,63,6,10.5000,32,63,0,multi-size with absolute virtual alignment
+binary_adaptive,255,63,6,10.5000,32,63,0,xor + msb + region metadata lookup
+fixed,255,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,64,64,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,64,1,64.0000,64,64,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,64,7,9.1429,32,64,0,multi-size with absolute virtual alignment
+binary_adaptive,255,64,1,64.0000,64,64,0,xor + msb + region metadata lookup
+fixed,255,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,65,65,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,65,2,32.5000,64,65,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,65,2,32.5000,64,65,0,multi-size with absolute virtual alignment
+binary_adaptive,255,65,2,32.5000,64,65,0,xor + msb + region metadata lookup
+fixed,255,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,127,127,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,127,7,18.1429,64,127,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,127,7,18.1429,64,127,0,multi-size with absolute virtual alignment
+binary_adaptive,255,127,7,18.1429,64,127,0,xor + msb + region metadata lookup
+fixed,255,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,128,128,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,128,1,128.0000,128,128,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,128,8,16.0000,64,128,0,multi-size with absolute virtual alignment
+binary_adaptive,255,128,1,128.0000,128,128,0,xor + msb + region metadata lookup
+fixed,255,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,129,129,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,129,2,64.5000,128,129,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,129,2,64.5000,128,129,0,multi-size with absolute virtual alignment
+binary_adaptive,255,129,2,64.5000,128,129,0,xor + msb + region metadata lookup
+fixed,255,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,255,255,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,255,8,31.8750,128,255,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,255,8,31.8750,128,255,0,multi-size with absolute virtual alignment
+binary_adaptive,255,255,8,31.8750,128,255,0,xor + msb + region metadata lookup
+fixed,255,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,256,256,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,256,1,256.0000,256,256,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,256,9,28.4444,128,256,0,multi-size with absolute virtual alignment
+binary_adaptive,255,256,1,256.0000,256,256,0,xor + msb + region metadata lookup
+fixed,255,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,257,257,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,257,2,128.5000,256,257,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,257,2,128.5000,256,257,0,multi-size with absolute virtual alignment
+binary_adaptive,255,257,2,128.5000,256,257,0,xor + msb + region metadata lookup
+fixed,255,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,511,511,1.0000,1,64,0,single huge size plus base pages
+multi_size_unaligned,255,511,9,56.7778,256,511,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,511,9,56.7778,256,511,0,multi-size with absolute virtual alignment
+binary_adaptive,255,511,9,56.7778,256,511,0,xor + msb + region metadata lookup
+fixed,255,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,512,1,512.0000,512,512,0,single huge size plus base pages
+multi_size_unaligned,255,512,1,512.0000,512,512,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,512,10,51.2000,256,512,0,multi-size with absolute virtual alignment
+binary_adaptive,255,512,1,512.0000,512,512,0,xor + msb + region metadata lookup
+fixed,255,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,513,2,256.5000,512,513,0,single huge size plus base pages
+multi_size_unaligned,255,513,2,256.5000,512,513,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,513,3,171.0000,256,513,0,multi-size with absolute virtual alignment
+binary_adaptive,255,513,2,256.5000,512,513,0,xor + msb + region metadata lookup
+fixed,255,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,1000,489,2.0450,512,575,0,single huge size plus base pages
+multi_size_unaligned,255,1000,6,166.6667,512,1000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,1000,9,111.1111,512,1000,0,multi-size with absolute virtual alignment
+binary_adaptive,255,1000,6,166.6667,512,1000,0,xor + msb + region metadata lookup
+fixed,255,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,1024,2,512.0000,512,1024,0,single huge size plus base pages
+multi_size_unaligned,255,1024,2,512.0000,512,1024,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,1024,11,93.0909,512,1024,0,multi-size with absolute virtual alignment
+binary_adaptive,255,1024,1,1024.0000,1024,1024,0,xor + msb + region metadata lookup
+fixed,255,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,2048,4,512.0000,512,2048,0,single huge size plus base pages
+multi_size_unaligned,255,2048,4,512.0000,512,2048,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,2048,13,157.5385,512,2048,0,multi-size with absolute virtual alignment
+binary_adaptive,255,2048,1,2048.0000,2048,2048,0,xor + msb + region metadata lookup
+fixed,255,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,4096,8,512.0000,512,4096,0,single huge size plus base pages
+multi_size_unaligned,255,4096,8,512.0000,512,4096,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,4096,17,240.9412,512,4096,0,multi-size with absolute virtual alignment
+binary_adaptive,255,4096,1,4096.0000,4096,4096,0,xor + msb + region metadata lookup
+fixed,255,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,8192,16,512.0000,512,8192,0,single huge size plus base pages
+multi_size_unaligned,255,8192,16,512.0000,512,8192,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,8192,25,327.6800,512,8192,0,multi-size with absolute virtual alignment
+binary_adaptive,255,8192,1,8192.0000,8192,8192,0,xor + msb + region metadata lookup
+fixed,255,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,10000,291,34.3643,512,9773,0,single huge size plus base pages
+multi_size_unaligned,255,10000,21,476.1905,512,10000,0,idealized multi-size; no alignment constraint
+multi_size_aligned,255,10000,25,400.0000,512,10000,0,multi-size with absolute virtual alignment
+binary_adaptive,255,10000,5,2000.0000,8192,10000,0,xor + msb + region metadata lookup

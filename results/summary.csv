@@ -1,0 +1,97 @@
+strategy,region_size_pages,mapping_count,avg_mapping_size_pages,largest_mapping_pages,estimated_tlb_reach_pages,internal_fragmentation_pages,lookup_model
+fixed,1,1,1.0000,1,1,0,shift/mask; constant-time base-page lookup
+huge_mixed,1,1,1.0000,1,1,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,1,1,1.0000,1,1,0,xor + msb + metadata lookup
+fixed,2,2,1.0000,1,2,0,shift/mask; constant-time base-page lookup
+huge_mixed,2,2,1.0000,1,2,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,2,1,2.0000,2,2,0,xor + msb + metadata lookup
+fixed,3,3,1.0000,1,3,0,shift/mask; constant-time base-page lookup
+huge_mixed,3,3,1.0000,1,3,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,3,2,1.5000,2,3,0,xor + msb + metadata lookup
+fixed,4,4,1.0000,1,4,0,shift/mask; constant-time base-page lookup
+huge_mixed,4,4,1.0000,1,4,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,4,1,4.0000,4,4,0,xor + msb + metadata lookup
+fixed,5,5,1.0000,1,5,0,shift/mask; constant-time base-page lookup
+huge_mixed,5,5,1.0000,1,5,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,5,2,2.5000,4,5,0,xor + msb + metadata lookup
+fixed,7,7,1.0000,1,7,0,shift/mask; constant-time base-page lookup
+huge_mixed,7,7,1.0000,1,7,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,7,3,2.3333,4,7,0,xor + msb + metadata lookup
+fixed,8,8,1.0000,1,8,0,shift/mask; constant-time base-page lookup
+huge_mixed,8,8,1.0000,1,8,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,8,1,8.0000,8,8,0,xor + msb + metadata lookup
+fixed,9,9,1.0000,1,9,0,shift/mask; constant-time base-page lookup
+huge_mixed,9,9,1.0000,1,9,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,9,2,4.5000,8,9,0,xor + msb + metadata lookup
+fixed,13,13,1.0000,1,13,0,shift/mask; constant-time base-page lookup
+huge_mixed,13,13,1.0000,1,13,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,13,3,4.3333,8,13,0,xor + msb + metadata lookup
+fixed,16,16,1.0000,1,16,0,shift/mask; constant-time base-page lookup
+huge_mixed,16,16,1.0000,1,16,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,16,1,16.0000,16,16,0,xor + msb + metadata lookup
+fixed,19,19,1.0000,1,19,0,shift/mask; constant-time base-page lookup
+huge_mixed,19,19,1.0000,1,19,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,19,3,6.3333,16,19,0,xor + msb + metadata lookup
+fixed,31,31,1.0000,1,31,0,shift/mask; constant-time base-page lookup
+huge_mixed,31,31,1.0000,1,31,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,31,5,6.2000,16,31,0,xor + msb + metadata lookup
+fixed,32,32,1.0000,1,32,0,shift/mask; constant-time base-page lookup
+huge_mixed,32,32,1.0000,1,32,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,32,1,32.0000,32,32,0,xor + msb + metadata lookup
+fixed,33,33,1.0000,1,33,0,shift/mask; constant-time base-page lookup
+huge_mixed,33,33,1.0000,1,33,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,33,2,16.5000,32,33,0,xor + msb + metadata lookup
+fixed,63,63,1.0000,1,63,0,shift/mask; constant-time base-page lookup
+huge_mixed,63,63,1.0000,1,63,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,63,6,10.5000,32,63,0,xor + msb + metadata lookup
+fixed,64,64,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,64,64,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,64,1,64.0000,64,64,0,xor + msb + metadata lookup
+fixed,65,65,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,65,65,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,65,2,32.5000,64,65,0,xor + msb + metadata lookup
+fixed,127,127,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,127,127,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,127,7,18.1429,64,127,0,xor + msb + metadata lookup
+fixed,128,128,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,128,128,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,128,1,128.0000,128,128,0,xor + msb + metadata lookup
+fixed,129,129,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,129,129,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,129,2,64.5000,128,129,0,xor + msb + metadata lookup
+fixed,255,255,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,255,255,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,255,8,31.8750,128,255,0,xor + msb + metadata lookup
+fixed,256,256,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,256,256,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,256,1,256.0000,256,256,0,xor + msb + metadata lookup
+fixed,257,257,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,257,257,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,257,2,128.5000,256,257,0,xor + msb + metadata lookup
+fixed,511,511,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,511,511,1.0000,1,64,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,511,9,56.7778,256,511,0,xor + msb + metadata lookup
+fixed,512,512,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,512,1,512.0000,512,512,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,512,1,512.0000,512,512,0,xor + msb + metadata lookup
+fixed,513,513,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,513,2,256.5000,512,513,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,513,2,256.5000,512,513,0,xor + msb + metadata lookup
+fixed,1000,1000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1000,489,2.0450,512,575,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,1000,6,166.6667,512,1000,0,xor + msb + metadata lookup
+fixed,1024,1024,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,1024,2,512.0000,512,1024,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,1024,1,1024.0000,1024,1024,0,xor + msb + metadata lookup
+fixed,2048,2048,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,2048,4,512.0000,512,2048,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,2048,1,2048.0000,2048,2048,0,xor + msb + metadata lookup
+fixed,4096,4096,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,4096,8,512.0000,512,4096,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,4096,1,4096.0000,4096,4096,0,xor + msb + metadata lookup
+fixed,8192,8192,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,8192,16,512.0000,512,8192,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,8192,1,8192.0000,8192,8192,0,xor + msb + metadata lookup
+fixed,10000,10000,1.0000,1,64,0,shift/mask; constant-time base-page lookup
+huge_mixed,10000,291,34.3643,512,9773,0,hardware/page-table dependent; huge/base mixed mappings
+binary_adaptive,10000,5,2000.0000,8192,10000,0,xor + msb + metadata lookup

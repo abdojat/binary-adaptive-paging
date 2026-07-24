@@ -1,0 +1,1153 @@
+strategy,comparison_group,region_start_page,region_size_pages,mapping_count,avg_mapping_size_pages,largest_mapping_pages,estimated_tlb_reach_pages,internal_fragmentation_pages,lookup_model
+fixed,both,0,1,1,1.0000,1,1,0,shift/mask; base-page lookup
+huge_mixed,both,0,1,1,1.0000,1,1,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,1,1,1.0000,1,1,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,1,1,1.0000,1,1,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,1,1,1.0000,1,1,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,1,1,1.0000,1,1,0,xor+msb logical chunk lookup
+fixed,both,0,2,2,1.0000,1,2,0,shift/mask; base-page lookup
+huge_mixed,both,0,2,2,1.0000,1,2,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,2,1,2.0000,2,2,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,2,1,2.0000,2,2,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,2,1,2.0000,2,2,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,2,1,2.0000,2,2,0,xor+msb logical chunk lookup
+fixed,both,0,3,3,1.0000,1,3,0,shift/mask; base-page lookup
+huge_mixed,both,0,3,3,1.0000,1,3,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,3,2,1.5000,2,3,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,3,2,1.5000,2,3,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,3,2,1.5000,2,3,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,3,2,1.5000,2,3,0,xor+msb logical chunk lookup
+fixed,both,0,4,4,1.0000,1,4,0,shift/mask; base-page lookup
+huge_mixed,both,0,4,4,1.0000,1,4,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,4,1,4.0000,4,4,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,4,1,4.0000,4,4,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,4,1,4.0000,4,4,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,4,1,4.0000,4,4,0,xor+msb logical chunk lookup
+fixed,both,0,5,5,1.0000,1,5,0,shift/mask; base-page lookup
+huge_mixed,both,0,5,5,1.0000,1,5,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,5,2,2.5000,4,5,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,5,2,2.5000,4,5,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,5,2,2.5000,4,5,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,5,2,2.5000,4,5,0,xor+msb logical chunk lookup
+fixed,both,0,7,7,1.0000,1,7,0,shift/mask; base-page lookup
+huge_mixed,both,0,7,7,1.0000,1,7,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,7,3,2.3333,4,7,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,7,3,2.3333,4,7,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,7,3,2.3333,4,7,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,7,3,2.3333,4,7,0,xor+msb logical chunk lookup
+fixed,both,0,8,8,1.0000,1,8,0,shift/mask; base-page lookup
+huge_mixed,both,0,8,8,1.0000,1,8,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,8,1,8.0000,8,8,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,8,1,8.0000,8,8,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,8,1,8.0000,8,8,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,8,1,8.0000,8,8,0,xor+msb logical chunk lookup
+fixed,both,0,9,9,1.0000,1,9,0,shift/mask; base-page lookup
+huge_mixed,both,0,9,9,1.0000,1,9,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,9,2,4.5000,8,9,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,9,2,4.5000,8,9,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,9,2,4.5000,8,9,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,9,2,4.5000,8,9,0,xor+msb logical chunk lookup
+fixed,both,0,13,13,1.0000,1,13,0,shift/mask; base-page lookup
+huge_mixed,both,0,13,13,1.0000,1,13,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,13,3,4.3333,8,13,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,13,3,4.3333,8,13,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,13,3,4.3333,8,13,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,13,3,4.3333,8,13,0,xor+msb logical chunk lookup
+fixed,both,0,16,16,1.0000,1,16,0,shift/mask; base-page lookup
+huge_mixed,both,0,16,16,1.0000,1,16,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,16,1,16.0000,16,16,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,16,1,16.0000,16,16,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,16,1,16.0000,16,16,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,16,1,16.0000,16,16,0,xor+msb logical chunk lookup
+fixed,both,0,19,19,1.0000,1,19,0,shift/mask; base-page lookup
+huge_mixed,both,0,19,19,1.0000,1,19,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,19,3,6.3333,16,19,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,19,3,6.3333,16,19,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,19,3,6.3333,16,19,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,19,3,6.3333,16,19,0,xor+msb logical chunk lookup
+fixed,both,0,31,31,1.0000,1,31,0,shift/mask; base-page lookup
+huge_mixed,both,0,31,31,1.0000,1,31,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,31,5,6.2000,16,31,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,31,5,6.2000,16,31,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,31,5,6.2000,16,31,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,31,5,6.2000,16,31,0,xor+msb logical chunk lookup
+fixed,both,0,32,32,1.0000,1,32,0,shift/mask; base-page lookup
+huge_mixed,both,0,32,32,1.0000,1,32,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,32,1,32.0000,32,32,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,32,1,32.0000,32,32,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,32,1,32.0000,32,32,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,32,1,32.0000,32,32,0,xor+msb logical chunk lookup
+fixed,both,0,33,33,1.0000,1,33,0,shift/mask; base-page lookup
+huge_mixed,both,0,33,33,1.0000,1,33,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,33,2,16.5000,32,33,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,33,2,16.5000,32,33,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,33,2,16.5000,32,33,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,33,2,16.5000,32,33,0,xor+msb logical chunk lookup
+fixed,both,0,63,63,1.0000,1,63,0,shift/mask; base-page lookup
+huge_mixed,both,0,63,63,1.0000,1,63,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,63,6,10.5000,32,63,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,63,6,10.5000,32,63,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,63,6,10.5000,32,63,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,63,6,10.5000,32,63,0,xor+msb logical chunk lookup
+fixed,both,0,64,64,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,64,64,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,64,1,64.0000,64,64,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,64,1,64.0000,64,64,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,64,1,64.0000,64,64,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,64,1,64.0000,64,64,0,xor+msb logical chunk lookup
+fixed,both,0,65,65,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,65,65,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,65,2,32.5000,64,65,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,65,2,32.5000,64,65,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,65,2,32.5000,64,65,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,65,2,32.5000,64,65,0,xor+msb logical chunk lookup
+fixed,both,0,127,127,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,127,127,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,127,7,18.1429,64,127,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,127,7,18.1429,64,127,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,127,7,18.1429,64,127,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,127,7,18.1429,64,127,0,xor+msb logical chunk lookup
+fixed,both,0,128,128,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,128,128,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,128,1,128.0000,128,128,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,128,1,128.0000,128,128,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,128,1,128.0000,128,128,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,128,1,128.0000,128,128,0,xor+msb logical chunk lookup
+fixed,both,0,129,129,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,129,129,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,129,2,64.5000,128,129,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,129,2,64.5000,128,129,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,129,2,64.5000,128,129,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,129,2,64.5000,128,129,0,xor+msb logical chunk lookup
+fixed,both,0,255,255,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,255,255,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,255,8,31.8750,128,255,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,255,8,31.8750,128,255,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,255,8,31.8750,128,255,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,255,8,31.8750,128,255,0,xor+msb logical chunk lookup
+fixed,both,0,256,256,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,256,256,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,256,1,256.0000,256,256,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,256,1,256.0000,256,256,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,256,1,256.0000,256,256,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,256,1,256.0000,256,256,0,xor+msb logical chunk lookup
+fixed,both,0,257,257,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,257,257,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,257,2,128.5000,256,257,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,257,2,128.5000,256,257,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,257,2,128.5000,256,257,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,257,2,128.5000,256,257,0,xor+msb logical chunk lookup
+fixed,both,0,511,511,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,511,511,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,511,9,56.7778,256,511,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,511,9,56.7778,256,511,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,511,9,56.7778,256,511,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,511,9,56.7778,256,511,0,xor+msb logical chunk lookup
+fixed,both,0,512,512,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,512,1,512.0000,512,512,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,512,1,512.0000,512,512,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,512,1,512.0000,512,512,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,512,1,512.0000,512,512,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,512,1,512.0000,512,512,0,xor+msb logical chunk lookup
+fixed,both,0,513,513,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,513,2,256.5000,512,513,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,513,2,256.5000,512,513,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,513,2,256.5000,512,513,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,513,2,256.5000,512,513,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,513,2,256.5000,512,513,0,xor+msb logical chunk lookup
+fixed,both,0,1000,1000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,1000,489,2.0450,512,575,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,1000,6,166.6667,512,1000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,1000,6,166.6667,512,1000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,1000,6,166.6667,512,1000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,1000,6,166.6667,512,1000,0,xor+msb logical chunk lookup
+fixed,both,0,1024,1024,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,1024,2,512.0000,512,1024,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,1024,2,512.0000,512,1024,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,1024,2,512.0000,512,1024,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,1024,2,512.0000,512,1024,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,1024,1,1024.0000,1024,1024,0,xor+msb logical chunk lookup
+fixed,both,0,2048,2048,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,2048,4,512.0000,512,2048,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,2048,4,512.0000,512,2048,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,2048,4,512.0000,512,2048,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,2048,4,512.0000,512,2048,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,2048,1,2048.0000,2048,2048,0,xor+msb logical chunk lookup
+fixed,both,0,4096,4096,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,4096,8,512.0000,512,4096,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,4096,8,512.0000,512,4096,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,4096,8,512.0000,512,4096,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,4096,8,512.0000,512,4096,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,4096,1,4096.0000,4096,4096,0,xor+msb logical chunk lookup
+fixed,both,0,8192,8192,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,8192,16,512.0000,512,8192,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,8192,16,512.0000,512,8192,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,8192,16,512.0000,512,8192,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,8192,16,512.0000,512,8192,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,8192,1,8192.0000,8192,8192,0,xor+msb logical chunk lookup
+fixed,both,0,10000,10000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,0,10000,291,34.3643,512,9773,0,huge/base page-table lookup
+multi_size_unaligned,fair,0,10000,21,476.1905,512,10000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,0,10000,21,476.1905,512,10000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,0,10000,21,476.1905,512,10000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,0,10000,5,2000.0000,8192,10000,0,xor+msb logical chunk lookup
+fixed,both,1,1,1,1.0000,1,1,0,shift/mask; base-page lookup
+huge_mixed,both,1,1,1,1.0000,1,1,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,1,1,1.0000,1,1,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,1,1,1.0000,1,1,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,1,1,1.0000,1,1,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,1,1,1.0000,1,1,0,xor+msb logical chunk lookup
+fixed,both,1,2,2,1.0000,1,2,0,shift/mask; base-page lookup
+huge_mixed,both,1,2,2,1.0000,1,2,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,2,1,2.0000,2,2,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,2,2,1.0000,1,2,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,2,1,2.0000,2,2,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,2,1,2.0000,2,2,0,xor+msb logical chunk lookup
+fixed,both,1,3,3,1.0000,1,3,0,shift/mask; base-page lookup
+huge_mixed,both,1,3,3,1.0000,1,3,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,3,2,1.5000,2,3,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,3,2,1.5000,2,3,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,3,2,1.5000,2,3,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,3,2,1.5000,2,3,0,xor+msb logical chunk lookup
+fixed,both,1,4,4,1.0000,1,4,0,shift/mask; base-page lookup
+huge_mixed,both,1,4,4,1.0000,1,4,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,4,1,4.0000,4,4,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,4,3,1.3333,2,4,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,4,1,4.0000,4,4,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,4,1,4.0000,4,4,0,xor+msb logical chunk lookup
+fixed,both,1,5,5,1.0000,1,5,0,shift/mask; base-page lookup
+huge_mixed,both,1,5,5,1.0000,1,5,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,5,2,2.5000,4,5,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,5,3,1.6667,2,5,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,5,2,2.5000,4,5,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,5,2,2.5000,4,5,0,xor+msb logical chunk lookup
+fixed,both,1,7,7,1.0000,1,7,0,shift/mask; base-page lookup
+huge_mixed,both,1,7,7,1.0000,1,7,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,7,3,2.3333,4,7,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,7,3,2.3333,4,7,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,7,3,2.3333,4,7,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,7,3,2.3333,4,7,0,xor+msb logical chunk lookup
+fixed,both,1,8,8,1.0000,1,8,0,shift/mask; base-page lookup
+huge_mixed,both,1,8,8,1.0000,1,8,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,8,1,8.0000,8,8,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,8,4,2.0000,4,8,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,8,1,8.0000,8,8,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,8,1,8.0000,8,8,0,xor+msb logical chunk lookup
+fixed,both,1,9,9,1.0000,1,9,0,shift/mask; base-page lookup
+huge_mixed,both,1,9,9,1.0000,1,9,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,9,2,4.5000,8,9,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,9,4,2.2500,4,9,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,9,2,4.5000,8,9,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,9,2,4.5000,8,9,0,xor+msb logical chunk lookup
+fixed,both,1,13,13,1.0000,1,13,0,shift/mask; base-page lookup
+huge_mixed,both,1,13,13,1.0000,1,13,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,13,3,4.3333,8,13,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,13,5,2.6000,4,13,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,13,3,4.3333,8,13,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,13,3,4.3333,8,13,0,xor+msb logical chunk lookup
+fixed,both,1,16,16,1.0000,1,16,0,shift/mask; base-page lookup
+huge_mixed,both,1,16,16,1.0000,1,16,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,16,1,16.0000,16,16,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,16,5,3.2000,8,16,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,16,1,16.0000,16,16,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,16,1,16.0000,16,16,0,xor+msb logical chunk lookup
+fixed,both,1,19,19,1.0000,1,19,0,shift/mask; base-page lookup
+huge_mixed,both,1,19,19,1.0000,1,19,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,19,3,6.3333,16,19,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,19,5,3.8000,8,19,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,19,3,6.3333,16,19,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,19,3,6.3333,16,19,0,xor+msb logical chunk lookup
+fixed,both,1,31,31,1.0000,1,31,0,shift/mask; base-page lookup
+huge_mixed,both,1,31,31,1.0000,1,31,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,31,5,6.2000,16,31,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,31,5,6.2000,16,31,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,31,5,6.2000,16,31,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,31,5,6.2000,16,31,0,xor+msb logical chunk lookup
+fixed,both,1,32,32,1.0000,1,32,0,shift/mask; base-page lookup
+huge_mixed,both,1,32,32,1.0000,1,32,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,32,1,32.0000,32,32,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,32,6,5.3333,16,32,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,32,1,32.0000,32,32,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,32,1,32.0000,32,32,0,xor+msb logical chunk lookup
+fixed,both,1,33,33,1.0000,1,33,0,shift/mask; base-page lookup
+huge_mixed,both,1,33,33,1.0000,1,33,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,33,2,16.5000,32,33,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,33,6,5.5000,16,33,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,33,2,16.5000,32,33,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,33,2,16.5000,32,33,0,xor+msb logical chunk lookup
+fixed,both,1,63,63,1.0000,1,63,0,shift/mask; base-page lookup
+huge_mixed,both,1,63,63,1.0000,1,63,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,63,6,10.5000,32,63,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,63,6,10.5000,32,63,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,63,6,10.5000,32,63,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,63,6,10.5000,32,63,0,xor+msb logical chunk lookup
+fixed,both,1,64,64,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,64,64,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,64,1,64.0000,64,64,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,64,7,9.1429,32,64,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,64,1,64.0000,64,64,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,64,1,64.0000,64,64,0,xor+msb logical chunk lookup
+fixed,both,1,65,65,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,65,65,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,65,2,32.5000,64,65,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,65,7,9.2857,32,65,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,65,2,32.5000,64,65,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,65,2,32.5000,64,65,0,xor+msb logical chunk lookup
+fixed,both,1,127,127,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,127,127,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,127,7,18.1429,64,127,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,127,7,18.1429,64,127,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,127,7,18.1429,64,127,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,127,7,18.1429,64,127,0,xor+msb logical chunk lookup
+fixed,both,1,128,128,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,128,128,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,128,1,128.0000,128,128,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,128,8,16.0000,64,128,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,128,1,128.0000,128,128,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,128,1,128.0000,128,128,0,xor+msb logical chunk lookup
+fixed,both,1,129,129,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,129,129,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,129,2,64.5000,128,129,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,129,8,16.1250,64,129,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,129,2,64.5000,128,129,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,129,2,64.5000,128,129,0,xor+msb logical chunk lookup
+fixed,both,1,255,255,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,255,255,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,255,8,31.8750,128,255,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,255,8,31.8750,128,255,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,255,8,31.8750,128,255,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,255,8,31.8750,128,255,0,xor+msb logical chunk lookup
+fixed,both,1,256,256,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,256,256,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,256,1,256.0000,256,256,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,256,9,28.4444,128,256,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,256,1,256.0000,256,256,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,256,1,256.0000,256,256,0,xor+msb logical chunk lookup
+fixed,both,1,257,257,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,257,257,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,257,2,128.5000,256,257,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,257,9,28.5556,128,257,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,257,2,128.5000,256,257,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,257,2,128.5000,256,257,0,xor+msb logical chunk lookup
+fixed,both,1,511,511,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,511,511,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,511,9,56.7778,256,511,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,511,9,56.7778,256,511,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,511,9,56.7778,256,511,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,511,9,56.7778,256,511,0,xor+msb logical chunk lookup
+fixed,both,1,512,512,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,512,1,512.0000,512,512,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,512,1,512.0000,512,512,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,512,10,51.2000,256,512,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,512,1,512.0000,512,512,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,512,1,512.0000,512,512,0,xor+msb logical chunk lookup
+fixed,both,1,513,513,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,513,2,256.5000,512,513,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,513,2,256.5000,512,513,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,513,10,51.3000,256,513,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,513,2,256.5000,512,513,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,513,2,256.5000,512,513,0,xor+msb logical chunk lookup
+fixed,both,1,1000,1000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,1000,489,2.0450,512,575,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,1000,6,166.6667,512,1000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,1000,15,66.6667,256,1000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,1000,6,166.6667,512,1000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,1000,6,166.6667,512,1000,0,xor+msb logical chunk lookup
+fixed,both,1,1024,1024,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,1024,2,512.0000,512,1024,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,1024,2,512.0000,512,1024,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,1024,11,93.0909,512,1024,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,1024,2,512.0000,512,1024,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,1024,1,1024.0000,1024,1024,0,xor+msb logical chunk lookup
+fixed,both,1,2048,2048,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,2048,4,512.0000,512,2048,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,2048,4,512.0000,512,2048,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,2048,13,157.5385,512,2048,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,2048,4,512.0000,512,2048,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,2048,1,2048.0000,2048,2048,0,xor+msb logical chunk lookup
+fixed,both,1,4096,4096,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,4096,8,512.0000,512,4096,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,4096,8,512.0000,512,4096,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,4096,17,240.9412,512,4096,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,4096,8,512.0000,512,4096,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,4096,1,4096.0000,4096,4096,0,xor+msb logical chunk lookup
+fixed,both,1,8192,8192,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,8192,16,512.0000,512,8192,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,8192,16,512.0000,512,8192,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,8192,25,327.6800,512,8192,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,8192,16,512.0000,512,8192,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,8192,1,8192.0000,8192,8192,0,xor+msb logical chunk lookup
+fixed,both,1,10000,10000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,1,10000,291,34.3643,512,9773,0,huge/base page-table lookup
+multi_size_unaligned,fair,1,10000,21,476.1905,512,10000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,1,10000,30,333.3333,512,10000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,1,10000,21,476.1905,512,10000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,1,10000,5,2000.0000,8192,10000,0,xor+msb logical chunk lookup
+fixed,both,7,1,1,1.0000,1,1,0,shift/mask; base-page lookup
+huge_mixed,both,7,1,1,1.0000,1,1,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,1,1,1.0000,1,1,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,1,1,1.0000,1,1,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,1,1,1.0000,1,1,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,1,1,1.0000,1,1,0,xor+msb logical chunk lookup
+fixed,both,7,2,2,1.0000,1,2,0,shift/mask; base-page lookup
+huge_mixed,both,7,2,2,1.0000,1,2,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,2,1,2.0000,2,2,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,2,2,1.0000,1,2,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,2,1,2.0000,2,2,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,2,1,2.0000,2,2,0,xor+msb logical chunk lookup
+fixed,both,7,3,3,1.0000,1,3,0,shift/mask; base-page lookup
+huge_mixed,both,7,3,3,1.0000,1,3,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,3,2,1.5000,2,3,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,3,2,1.5000,2,3,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,3,2,1.5000,2,3,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,3,2,1.5000,2,3,0,xor+msb logical chunk lookup
+fixed,both,7,4,4,1.0000,1,4,0,shift/mask; base-page lookup
+huge_mixed,both,7,4,4,1.0000,1,4,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,4,1,4.0000,4,4,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,4,3,1.3333,2,4,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,4,1,4.0000,4,4,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,4,1,4.0000,4,4,0,xor+msb logical chunk lookup
+fixed,both,7,5,5,1.0000,1,5,0,shift/mask; base-page lookup
+huge_mixed,both,7,5,5,1.0000,1,5,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,5,2,2.5000,4,5,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,5,2,2.5000,4,5,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,5,2,2.5000,4,5,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,5,2,2.5000,4,5,0,xor+msb logical chunk lookup
+fixed,both,7,7,7,1.0000,1,7,0,shift/mask; base-page lookup
+huge_mixed,both,7,7,7,1.0000,1,7,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,7,3,2.3333,4,7,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,7,3,2.3333,4,7,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,7,3,2.3333,4,7,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,7,3,2.3333,4,7,0,xor+msb logical chunk lookup
+fixed,both,7,8,8,1.0000,1,8,0,shift/mask; base-page lookup
+huge_mixed,both,7,8,8,1.0000,1,8,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,8,1,8.0000,8,8,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,8,4,2.0000,4,8,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,8,1,8.0000,8,8,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,8,1,8.0000,8,8,0,xor+msb logical chunk lookup
+fixed,both,7,9,9,1.0000,1,9,0,shift/mask; base-page lookup
+huge_mixed,both,7,9,9,1.0000,1,9,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,9,2,4.5000,8,9,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,9,2,4.5000,8,9,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,9,2,4.5000,8,9,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,9,2,4.5000,8,9,0,xor+msb logical chunk lookup
+fixed,both,7,13,13,1.0000,1,13,0,shift/mask; base-page lookup
+huge_mixed,both,7,13,13,1.0000,1,13,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,13,3,4.3333,8,13,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,13,3,4.3333,8,13,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,13,3,4.3333,8,13,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,13,3,4.3333,8,13,0,xor+msb logical chunk lookup
+fixed,both,7,16,16,1.0000,1,16,0,shift/mask; base-page lookup
+huge_mixed,both,7,16,16,1.0000,1,16,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,16,1,16.0000,16,16,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,16,5,3.2000,8,16,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,16,1,16.0000,16,16,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,16,1,16.0000,16,16,0,xor+msb logical chunk lookup
+fixed,both,7,19,19,1.0000,1,19,0,shift/mask; base-page lookup
+huge_mixed,both,7,19,19,1.0000,1,19,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,19,3,6.3333,16,19,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,19,4,4.7500,8,19,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,19,3,6.3333,16,19,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,19,3,6.3333,16,19,0,xor+msb logical chunk lookup
+fixed,both,7,31,31,1.0000,1,31,0,shift/mask; base-page lookup
+huge_mixed,both,7,31,31,1.0000,1,31,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,31,5,6.2000,16,31,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,31,5,6.2000,16,31,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,31,5,6.2000,16,31,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,31,5,6.2000,16,31,0,xor+msb logical chunk lookup
+fixed,both,7,32,32,1.0000,1,32,0,shift/mask; base-page lookup
+huge_mixed,both,7,32,32,1.0000,1,32,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,32,1,32.0000,32,32,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,32,6,5.3333,16,32,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,32,1,32.0000,32,32,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,32,1,32.0000,32,32,0,xor+msb logical chunk lookup
+fixed,both,7,33,33,1.0000,1,33,0,shift/mask; base-page lookup
+huge_mixed,both,7,33,33,1.0000,1,33,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,33,2,16.5000,32,33,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,33,4,8.2500,16,33,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,33,2,16.5000,32,33,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,33,2,16.5000,32,33,0,xor+msb logical chunk lookup
+fixed,both,7,63,63,1.0000,1,63,0,shift/mask; base-page lookup
+huge_mixed,both,7,63,63,1.0000,1,63,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,63,6,10.5000,32,63,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,63,6,10.5000,32,63,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,63,6,10.5000,32,63,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,63,6,10.5000,32,63,0,xor+msb logical chunk lookup
+fixed,both,7,64,64,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,64,64,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,64,1,64.0000,64,64,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,64,7,9.1429,32,64,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,64,1,64.0000,64,64,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,64,1,64.0000,64,64,0,xor+msb logical chunk lookup
+fixed,both,7,65,65,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,65,65,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,65,2,32.5000,64,65,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,65,5,13.0000,32,65,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,65,2,32.5000,64,65,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,65,2,32.5000,64,65,0,xor+msb logical chunk lookup
+fixed,both,7,127,127,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,127,127,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,127,7,18.1429,64,127,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,127,7,18.1429,64,127,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,127,7,18.1429,64,127,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,127,7,18.1429,64,127,0,xor+msb logical chunk lookup
+fixed,both,7,128,128,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,128,128,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,128,1,128.0000,128,128,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,128,8,16.0000,64,128,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,128,1,128.0000,128,128,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,128,1,128.0000,128,128,0,xor+msb logical chunk lookup
+fixed,both,7,129,129,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,129,129,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,129,2,64.5000,128,129,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,129,6,21.5000,64,129,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,129,2,64.5000,128,129,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,129,2,64.5000,128,129,0,xor+msb logical chunk lookup
+fixed,both,7,255,255,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,255,255,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,255,8,31.8750,128,255,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,255,8,31.8750,128,255,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,255,8,31.8750,128,255,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,255,8,31.8750,128,255,0,xor+msb logical chunk lookup
+fixed,both,7,256,256,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,256,256,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,256,1,256.0000,256,256,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,256,9,28.4444,128,256,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,256,1,256.0000,256,256,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,256,1,256.0000,256,256,0,xor+msb logical chunk lookup
+fixed,both,7,257,257,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,257,257,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,257,2,128.5000,256,257,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,257,7,36.7143,128,257,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,257,2,128.5000,256,257,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,257,2,128.5000,256,257,0,xor+msb logical chunk lookup
+fixed,both,7,511,511,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,511,511,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,511,9,56.7778,256,511,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,511,9,56.7778,256,511,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,511,9,56.7778,256,511,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,511,9,56.7778,256,511,0,xor+msb logical chunk lookup
+fixed,both,7,512,512,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,512,1,512.0000,512,512,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,512,1,512.0000,512,512,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,512,10,51.2000,256,512,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,512,1,512.0000,512,512,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,512,1,512.0000,512,512,0,xor+msb logical chunk lookup
+fixed,both,7,513,513,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,513,2,256.5000,512,513,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,513,2,256.5000,512,513,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,513,8,64.1250,256,513,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,513,2,256.5000,512,513,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,513,2,256.5000,512,513,0,xor+msb logical chunk lookup
+fixed,both,7,1000,1000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,1000,489,2.0450,512,575,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,1000,6,166.6667,512,1000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,1000,15,66.6667,256,1000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,1000,6,166.6667,512,1000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,1000,6,166.6667,512,1000,0,xor+msb logical chunk lookup
+fixed,both,7,1024,1024,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,1024,2,512.0000,512,1024,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,1024,2,512.0000,512,1024,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,1024,11,93.0909,512,1024,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,1024,2,512.0000,512,1024,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,1024,1,1024.0000,1024,1024,0,xor+msb logical chunk lookup
+fixed,both,7,2048,2048,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,2048,4,512.0000,512,2048,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,2048,4,512.0000,512,2048,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,2048,13,157.5385,512,2048,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,2048,4,512.0000,512,2048,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,2048,1,2048.0000,2048,2048,0,xor+msb logical chunk lookup
+fixed,both,7,4096,4096,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,4096,8,512.0000,512,4096,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,4096,8,512.0000,512,4096,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,4096,17,240.9412,512,4096,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,4096,8,512.0000,512,4096,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,4096,1,4096.0000,4096,4096,0,xor+msb logical chunk lookup
+fixed,both,7,8192,8192,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,8192,16,512.0000,512,8192,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,8192,16,512.0000,512,8192,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,8192,25,327.6800,512,8192,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,8192,16,512.0000,512,8192,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,8192,1,8192.0000,8192,8192,0,xor+msb logical chunk lookup
+fixed,both,7,10000,10000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,7,10000,291,34.3643,512,9773,0,huge/base page-table lookup
+multi_size_unaligned,fair,7,10000,21,476.1905,512,10000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,7,10000,30,333.3333,512,10000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,7,10000,21,476.1905,512,10000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,7,10000,5,2000.0000,8192,10000,0,xor+msb logical chunk lookup
+fixed,both,13,1,1,1.0000,1,1,0,shift/mask; base-page lookup
+huge_mixed,both,13,1,1,1.0000,1,1,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,1,1,1.0000,1,1,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,1,1,1.0000,1,1,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,1,1,1.0000,1,1,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,1,1,1.0000,1,1,0,xor+msb logical chunk lookup
+fixed,both,13,2,2,1.0000,1,2,0,shift/mask; base-page lookup
+huge_mixed,both,13,2,2,1.0000,1,2,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,2,1,2.0000,2,2,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,2,2,1.0000,1,2,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,2,1,2.0000,2,2,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,2,1,2.0000,2,2,0,xor+msb logical chunk lookup
+fixed,both,13,3,3,1.0000,1,3,0,shift/mask; base-page lookup
+huge_mixed,both,13,3,3,1.0000,1,3,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,3,2,1.5000,2,3,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,3,2,1.5000,2,3,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,3,2,1.5000,2,3,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,3,2,1.5000,2,3,0,xor+msb logical chunk lookup
+fixed,both,13,4,4,1.0000,1,4,0,shift/mask; base-page lookup
+huge_mixed,both,13,4,4,1.0000,1,4,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,4,1,4.0000,4,4,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,4,3,1.3333,2,4,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,4,1,4.0000,4,4,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,4,1,4.0000,4,4,0,xor+msb logical chunk lookup
+fixed,both,13,5,5,1.0000,1,5,0,shift/mask; base-page lookup
+huge_mixed,both,13,5,5,1.0000,1,5,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,5,2,2.5000,4,5,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,5,3,1.6667,2,5,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,5,2,2.5000,4,5,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,5,2,2.5000,4,5,0,xor+msb logical chunk lookup
+fixed,both,13,7,7,1.0000,1,7,0,shift/mask; base-page lookup
+huge_mixed,both,13,7,7,1.0000,1,7,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,7,3,2.3333,4,7,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,7,3,2.3333,4,7,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,7,3,2.3333,4,7,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,7,3,2.3333,4,7,0,xor+msb logical chunk lookup
+fixed,both,13,8,8,1.0000,1,8,0,shift/mask; base-page lookup
+huge_mixed,both,13,8,8,1.0000,1,8,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,8,1,8.0000,8,8,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,8,4,2.0000,4,8,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,8,1,8.0000,8,8,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,8,1,8.0000,8,8,0,xor+msb logical chunk lookup
+fixed,both,13,9,9,1.0000,1,9,0,shift/mask; base-page lookup
+huge_mixed,both,13,9,9,1.0000,1,9,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,9,2,4.5000,8,9,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,9,4,2.2500,4,9,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,9,2,4.5000,8,9,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,9,2,4.5000,8,9,0,xor+msb logical chunk lookup
+fixed,both,13,13,13,1.0000,1,13,0,shift/mask; base-page lookup
+huge_mixed,both,13,13,13,1.0000,1,13,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,13,3,4.3333,8,13,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,13,4,3.2500,8,13,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,13,3,4.3333,8,13,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,13,3,4.3333,8,13,0,xor+msb logical chunk lookup
+fixed,both,13,16,16,1.0000,1,16,0,shift/mask; base-page lookup
+huge_mixed,both,13,16,16,1.0000,1,16,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,16,1,16.0000,16,16,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,16,5,3.2000,8,16,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,16,1,16.0000,16,16,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,16,1,16.0000,16,16,0,xor+msb logical chunk lookup
+fixed,both,13,19,19,1.0000,1,19,0,shift/mask; base-page lookup
+huge_mixed,both,13,19,19,1.0000,1,19,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,19,3,6.3333,16,19,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,19,3,6.3333,16,19,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,19,3,6.3333,16,19,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,19,3,6.3333,16,19,0,xor+msb logical chunk lookup
+fixed,both,13,31,31,1.0000,1,31,0,shift/mask; base-page lookup
+huge_mixed,both,13,31,31,1.0000,1,31,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,31,5,6.2000,16,31,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,31,5,6.2000,16,31,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,31,5,6.2000,16,31,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,31,5,6.2000,16,31,0,xor+msb logical chunk lookup
+fixed,both,13,32,32,1.0000,1,32,0,shift/mask; base-page lookup
+huge_mixed,both,13,32,32,1.0000,1,32,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,32,1,32.0000,32,32,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,32,6,5.3333,16,32,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,32,1,32.0000,32,32,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,32,1,32.0000,32,32,0,xor+msb logical chunk lookup
+fixed,both,13,33,33,1.0000,1,33,0,shift/mask; base-page lookup
+huge_mixed,both,13,33,33,1.0000,1,33,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,33,2,16.5000,32,33,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,33,6,5.5000,16,33,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,33,2,16.5000,32,33,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,33,2,16.5000,32,33,0,xor+msb logical chunk lookup
+fixed,both,13,63,63,1.0000,1,63,0,shift/mask; base-page lookup
+huge_mixed,both,13,63,63,1.0000,1,63,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,63,6,10.5000,32,63,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,63,6,10.5000,32,63,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,63,6,10.5000,32,63,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,63,6,10.5000,32,63,0,xor+msb logical chunk lookup
+fixed,both,13,64,64,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,64,64,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,64,1,64.0000,64,64,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,64,7,9.1429,32,64,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,64,1,64.0000,64,64,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,64,1,64.0000,64,64,0,xor+msb logical chunk lookup
+fixed,both,13,65,65,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,65,65,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,65,2,32.5000,64,65,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,65,7,9.2857,32,65,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,65,2,32.5000,64,65,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,65,2,32.5000,64,65,0,xor+msb logical chunk lookup
+fixed,both,13,127,127,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,127,127,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,127,7,18.1429,64,127,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,127,7,18.1429,64,127,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,127,7,18.1429,64,127,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,127,7,18.1429,64,127,0,xor+msb logical chunk lookup
+fixed,both,13,128,128,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,128,128,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,128,1,128.0000,128,128,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,128,8,16.0000,64,128,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,128,1,128.0000,128,128,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,128,1,128.0000,128,128,0,xor+msb logical chunk lookup
+fixed,both,13,129,129,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,129,129,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,129,2,64.5000,128,129,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,129,8,16.1250,64,129,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,129,2,64.5000,128,129,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,129,2,64.5000,128,129,0,xor+msb logical chunk lookup
+fixed,both,13,255,255,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,255,255,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,255,8,31.8750,128,255,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,255,8,31.8750,128,255,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,255,8,31.8750,128,255,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,255,8,31.8750,128,255,0,xor+msb logical chunk lookup
+fixed,both,13,256,256,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,256,256,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,256,1,256.0000,256,256,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,256,9,28.4444,128,256,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,256,1,256.0000,256,256,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,256,1,256.0000,256,256,0,xor+msb logical chunk lookup
+fixed,both,13,257,257,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,257,257,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,257,2,128.5000,256,257,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,257,9,28.5556,128,257,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,257,2,128.5000,256,257,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,257,2,128.5000,256,257,0,xor+msb logical chunk lookup
+fixed,both,13,511,511,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,511,511,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,511,9,56.7778,256,511,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,511,9,56.7778,256,511,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,511,9,56.7778,256,511,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,511,9,56.7778,256,511,0,xor+msb logical chunk lookup
+fixed,both,13,512,512,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,512,1,512.0000,512,512,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,512,1,512.0000,512,512,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,512,10,51.2000,256,512,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,512,1,512.0000,512,512,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,512,1,512.0000,512,512,0,xor+msb logical chunk lookup
+fixed,both,13,513,513,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,513,2,256.5000,512,513,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,513,2,256.5000,512,513,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,513,10,51.3000,256,513,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,513,2,256.5000,512,513,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,513,2,256.5000,512,513,0,xor+msb logical chunk lookup
+fixed,both,13,1000,1000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,1000,489,2.0450,512,575,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,1000,6,166.6667,512,1000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,1000,14,71.4286,256,1000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,1000,6,166.6667,512,1000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,1000,6,166.6667,512,1000,0,xor+msb logical chunk lookup
+fixed,both,13,1024,1024,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,1024,2,512.0000,512,1024,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,1024,2,512.0000,512,1024,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,1024,11,93.0909,512,1024,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,1024,2,512.0000,512,1024,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,1024,1,1024.0000,1024,1024,0,xor+msb logical chunk lookup
+fixed,both,13,2048,2048,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,2048,4,512.0000,512,2048,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,2048,4,512.0000,512,2048,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,2048,13,157.5385,512,2048,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,2048,4,512.0000,512,2048,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,2048,1,2048.0000,2048,2048,0,xor+msb logical chunk lookup
+fixed,both,13,4096,4096,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,4096,8,512.0000,512,4096,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,4096,8,512.0000,512,4096,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,4096,17,240.9412,512,4096,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,4096,8,512.0000,512,4096,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,4096,1,4096.0000,4096,4096,0,xor+msb logical chunk lookup
+fixed,both,13,8192,8192,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,8192,16,512.0000,512,8192,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,8192,16,512.0000,512,8192,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,8192,25,327.6800,512,8192,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,8192,16,512.0000,512,8192,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,8192,1,8192.0000,8192,8192,0,xor+msb logical chunk lookup
+fixed,both,13,10000,10000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,13,10000,291,34.3643,512,9773,0,huge/base page-table lookup
+multi_size_unaligned,fair,13,10000,21,476.1905,512,10000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,13,10000,30,333.3333,512,10000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,13,10000,21,476.1905,512,10000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,13,10000,5,2000.0000,8192,10000,0,xor+msb logical chunk lookup
+fixed,both,64,1,1,1.0000,1,1,0,shift/mask; base-page lookup
+huge_mixed,both,64,1,1,1.0000,1,1,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,1,1,1.0000,1,1,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,1,1,1.0000,1,1,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,1,1,1.0000,1,1,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,1,1,1.0000,1,1,0,xor+msb logical chunk lookup
+fixed,both,64,2,2,1.0000,1,2,0,shift/mask; base-page lookup
+huge_mixed,both,64,2,2,1.0000,1,2,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,2,1,2.0000,2,2,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,2,1,2.0000,2,2,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,2,1,2.0000,2,2,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,2,1,2.0000,2,2,0,xor+msb logical chunk lookup
+fixed,both,64,3,3,1.0000,1,3,0,shift/mask; base-page lookup
+huge_mixed,both,64,3,3,1.0000,1,3,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,3,2,1.5000,2,3,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,3,2,1.5000,2,3,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,3,2,1.5000,2,3,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,3,2,1.5000,2,3,0,xor+msb logical chunk lookup
+fixed,both,64,4,4,1.0000,1,4,0,shift/mask; base-page lookup
+huge_mixed,both,64,4,4,1.0000,1,4,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,4,1,4.0000,4,4,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,4,1,4.0000,4,4,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,4,1,4.0000,4,4,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,4,1,4.0000,4,4,0,xor+msb logical chunk lookup
+fixed,both,64,5,5,1.0000,1,5,0,shift/mask; base-page lookup
+huge_mixed,both,64,5,5,1.0000,1,5,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,5,2,2.5000,4,5,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,5,2,2.5000,4,5,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,5,2,2.5000,4,5,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,5,2,2.5000,4,5,0,xor+msb logical chunk lookup
+fixed,both,64,7,7,1.0000,1,7,0,shift/mask; base-page lookup
+huge_mixed,both,64,7,7,1.0000,1,7,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,7,3,2.3333,4,7,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,7,3,2.3333,4,7,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,7,3,2.3333,4,7,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,7,3,2.3333,4,7,0,xor+msb logical chunk lookup
+fixed,both,64,8,8,1.0000,1,8,0,shift/mask; base-page lookup
+huge_mixed,both,64,8,8,1.0000,1,8,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,8,1,8.0000,8,8,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,8,1,8.0000,8,8,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,8,1,8.0000,8,8,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,8,1,8.0000,8,8,0,xor+msb logical chunk lookup
+fixed,both,64,9,9,1.0000,1,9,0,shift/mask; base-page lookup
+huge_mixed,both,64,9,9,1.0000,1,9,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,9,2,4.5000,8,9,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,9,2,4.5000,8,9,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,9,2,4.5000,8,9,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,9,2,4.5000,8,9,0,xor+msb logical chunk lookup
+fixed,both,64,13,13,1.0000,1,13,0,shift/mask; base-page lookup
+huge_mixed,both,64,13,13,1.0000,1,13,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,13,3,4.3333,8,13,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,13,3,4.3333,8,13,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,13,3,4.3333,8,13,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,13,3,4.3333,8,13,0,xor+msb logical chunk lookup
+fixed,both,64,16,16,1.0000,1,16,0,shift/mask; base-page lookup
+huge_mixed,both,64,16,16,1.0000,1,16,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,16,1,16.0000,16,16,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,16,1,16.0000,16,16,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,16,1,16.0000,16,16,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,16,1,16.0000,16,16,0,xor+msb logical chunk lookup
+fixed,both,64,19,19,1.0000,1,19,0,shift/mask; base-page lookup
+huge_mixed,both,64,19,19,1.0000,1,19,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,19,3,6.3333,16,19,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,19,3,6.3333,16,19,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,19,3,6.3333,16,19,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,19,3,6.3333,16,19,0,xor+msb logical chunk lookup
+fixed,both,64,31,31,1.0000,1,31,0,shift/mask; base-page lookup
+huge_mixed,both,64,31,31,1.0000,1,31,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,31,5,6.2000,16,31,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,31,5,6.2000,16,31,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,31,5,6.2000,16,31,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,31,5,6.2000,16,31,0,xor+msb logical chunk lookup
+fixed,both,64,32,32,1.0000,1,32,0,shift/mask; base-page lookup
+huge_mixed,both,64,32,32,1.0000,1,32,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,32,1,32.0000,32,32,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,32,1,32.0000,32,32,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,32,1,32.0000,32,32,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,32,1,32.0000,32,32,0,xor+msb logical chunk lookup
+fixed,both,64,33,33,1.0000,1,33,0,shift/mask; base-page lookup
+huge_mixed,both,64,33,33,1.0000,1,33,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,33,2,16.5000,32,33,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,33,2,16.5000,32,33,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,33,2,16.5000,32,33,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,33,2,16.5000,32,33,0,xor+msb logical chunk lookup
+fixed,both,64,63,63,1.0000,1,63,0,shift/mask; base-page lookup
+huge_mixed,both,64,63,63,1.0000,1,63,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,63,6,10.5000,32,63,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,63,6,10.5000,32,63,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,63,6,10.5000,32,63,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,63,6,10.5000,32,63,0,xor+msb logical chunk lookup
+fixed,both,64,64,64,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,64,64,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,64,1,64.0000,64,64,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,64,1,64.0000,64,64,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,64,1,64.0000,64,64,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,64,1,64.0000,64,64,0,xor+msb logical chunk lookup
+fixed,both,64,65,65,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,65,65,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,65,2,32.5000,64,65,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,65,2,32.5000,64,65,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,65,2,32.5000,64,65,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,65,2,32.5000,64,65,0,xor+msb logical chunk lookup
+fixed,both,64,127,127,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,127,127,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,127,7,18.1429,64,127,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,127,7,18.1429,64,127,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,127,7,18.1429,64,127,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,127,7,18.1429,64,127,0,xor+msb logical chunk lookup
+fixed,both,64,128,128,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,128,128,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,128,1,128.0000,128,128,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,128,2,64.0000,64,128,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,128,1,128.0000,128,128,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,128,1,128.0000,128,128,0,xor+msb logical chunk lookup
+fixed,both,64,129,129,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,129,129,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,129,2,64.5000,128,129,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,129,3,43.0000,64,129,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,129,2,64.5000,128,129,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,129,2,64.5000,128,129,0,xor+msb logical chunk lookup
+fixed,both,64,255,255,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,255,255,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,255,8,31.8750,128,255,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,255,8,31.8750,128,255,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,255,8,31.8750,128,255,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,255,8,31.8750,128,255,0,xor+msb logical chunk lookup
+fixed,both,64,256,256,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,256,256,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,256,1,256.0000,256,256,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,256,3,85.3333,128,256,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,256,1,256.0000,256,256,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,256,1,256.0000,256,256,0,xor+msb logical chunk lookup
+fixed,both,64,257,257,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,257,257,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,257,2,128.5000,256,257,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,257,4,64.2500,128,257,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,257,2,128.5000,256,257,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,257,2,128.5000,256,257,0,xor+msb logical chunk lookup
+fixed,both,64,511,511,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,511,511,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,511,9,56.7778,256,511,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,511,9,56.7778,256,511,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,511,9,56.7778,256,511,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,511,9,56.7778,256,511,0,xor+msb logical chunk lookup
+fixed,both,64,512,512,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,512,1,512.0000,512,512,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,512,1,512.0000,512,512,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,512,4,128.0000,256,512,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,512,1,512.0000,512,512,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,512,1,512.0000,512,512,0,xor+msb logical chunk lookup
+fixed,both,64,513,513,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,513,2,256.5000,512,513,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,513,2,256.5000,512,513,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,513,5,102.6000,256,513,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,513,2,256.5000,512,513,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,513,2,256.5000,512,513,0,xor+msb logical chunk lookup
+fixed,both,64,1000,1000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,1000,489,2.0450,512,575,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,1000,6,166.6667,512,1000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,1000,6,166.6667,512,1000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,1000,6,166.6667,512,1000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,1000,6,166.6667,512,1000,0,xor+msb logical chunk lookup
+fixed,both,64,1024,1024,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,1024,2,512.0000,512,1024,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,1024,2,512.0000,512,1024,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,1024,5,204.8000,512,1024,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,1024,2,512.0000,512,1024,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,1024,1,1024.0000,1024,1024,0,xor+msb logical chunk lookup
+fixed,both,64,2048,2048,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,2048,4,512.0000,512,2048,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,2048,4,512.0000,512,2048,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,2048,7,292.5714,512,2048,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,2048,4,512.0000,512,2048,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,2048,1,2048.0000,2048,2048,0,xor+msb logical chunk lookup
+fixed,both,64,4096,4096,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,4096,8,512.0000,512,4096,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,4096,8,512.0000,512,4096,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,4096,11,372.3636,512,4096,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,4096,8,512.0000,512,4096,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,4096,1,4096.0000,4096,4096,0,xor+msb logical chunk lookup
+fixed,both,64,8192,8192,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,8192,16,512.0000,512,8192,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,8192,16,512.0000,512,8192,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,8192,19,431.1579,512,8192,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,8192,16,512.0000,512,8192,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,8192,1,8192.0000,8192,8192,0,xor+msb logical chunk lookup
+fixed,both,64,10000,10000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,64,10000,291,34.3643,512,9773,0,huge/base page-table lookup
+multi_size_unaligned,fair,64,10000,21,476.1905,512,10000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,64,10000,24,416.6667,512,10000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,64,10000,21,476.1905,512,10000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,64,10000,5,2000.0000,8192,10000,0,xor+msb logical chunk lookup
+fixed,both,255,1,1,1.0000,1,1,0,shift/mask; base-page lookup
+huge_mixed,both,255,1,1,1.0000,1,1,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,1,1,1.0000,1,1,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,1,1,1.0000,1,1,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,1,1,1.0000,1,1,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,1,1,1.0000,1,1,0,xor+msb logical chunk lookup
+fixed,both,255,2,2,1.0000,1,2,0,shift/mask; base-page lookup
+huge_mixed,both,255,2,2,1.0000,1,2,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,2,1,2.0000,2,2,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,2,2,1.0000,1,2,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,2,1,2.0000,2,2,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,2,1,2.0000,2,2,0,xor+msb logical chunk lookup
+fixed,both,255,3,3,1.0000,1,3,0,shift/mask; base-page lookup
+huge_mixed,both,255,3,3,1.0000,1,3,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,3,2,1.5000,2,3,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,3,2,1.5000,2,3,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,3,2,1.5000,2,3,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,3,2,1.5000,2,3,0,xor+msb logical chunk lookup
+fixed,both,255,4,4,1.0000,1,4,0,shift/mask; base-page lookup
+huge_mixed,both,255,4,4,1.0000,1,4,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,4,1,4.0000,4,4,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,4,3,1.3333,2,4,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,4,1,4.0000,4,4,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,4,1,4.0000,4,4,0,xor+msb logical chunk lookup
+fixed,both,255,5,5,1.0000,1,5,0,shift/mask; base-page lookup
+huge_mixed,both,255,5,5,1.0000,1,5,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,5,2,2.5000,4,5,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,5,2,2.5000,4,5,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,5,2,2.5000,4,5,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,5,2,2.5000,4,5,0,xor+msb logical chunk lookup
+fixed,both,255,7,7,1.0000,1,7,0,shift/mask; base-page lookup
+huge_mixed,both,255,7,7,1.0000,1,7,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,7,3,2.3333,4,7,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,7,3,2.3333,4,7,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,7,3,2.3333,4,7,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,7,3,2.3333,4,7,0,xor+msb logical chunk lookup
+fixed,both,255,8,8,1.0000,1,8,0,shift/mask; base-page lookup
+huge_mixed,both,255,8,8,1.0000,1,8,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,8,1,8.0000,8,8,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,8,4,2.0000,4,8,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,8,1,8.0000,8,8,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,8,1,8.0000,8,8,0,xor+msb logical chunk lookup
+fixed,both,255,9,9,1.0000,1,9,0,shift/mask; base-page lookup
+huge_mixed,both,255,9,9,1.0000,1,9,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,9,2,4.5000,8,9,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,9,2,4.5000,8,9,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,9,2,4.5000,8,9,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,9,2,4.5000,8,9,0,xor+msb logical chunk lookup
+fixed,both,255,13,13,1.0000,1,13,0,shift/mask; base-page lookup
+huge_mixed,both,255,13,13,1.0000,1,13,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,13,3,4.3333,8,13,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,13,3,4.3333,8,13,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,13,3,4.3333,8,13,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,13,3,4.3333,8,13,0,xor+msb logical chunk lookup
+fixed,both,255,16,16,1.0000,1,16,0,shift/mask; base-page lookup
+huge_mixed,both,255,16,16,1.0000,1,16,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,16,1,16.0000,16,16,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,16,5,3.2000,8,16,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,16,1,16.0000,16,16,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,16,1,16.0000,16,16,0,xor+msb logical chunk lookup
+fixed,both,255,19,19,1.0000,1,19,0,shift/mask; base-page lookup
+huge_mixed,both,255,19,19,1.0000,1,19,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,19,3,6.3333,16,19,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,19,3,6.3333,16,19,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,19,3,6.3333,16,19,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,19,3,6.3333,16,19,0,xor+msb logical chunk lookup
+fixed,both,255,31,31,1.0000,1,31,0,shift/mask; base-page lookup
+huge_mixed,both,255,31,31,1.0000,1,31,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,31,5,6.2000,16,31,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,31,5,6.2000,16,31,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,31,5,6.2000,16,31,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,31,5,6.2000,16,31,0,xor+msb logical chunk lookup
+fixed,both,255,32,32,1.0000,1,32,0,shift/mask; base-page lookup
+huge_mixed,both,255,32,32,1.0000,1,32,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,32,1,32.0000,32,32,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,32,6,5.3333,16,32,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,32,1,32.0000,32,32,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,32,1,32.0000,32,32,0,xor+msb logical chunk lookup
+fixed,both,255,33,33,1.0000,1,33,0,shift/mask; base-page lookup
+huge_mixed,both,255,33,33,1.0000,1,33,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,33,2,16.5000,32,33,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,33,2,16.5000,32,33,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,33,2,16.5000,32,33,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,33,2,16.5000,32,33,0,xor+msb logical chunk lookup
+fixed,both,255,63,63,1.0000,1,63,0,shift/mask; base-page lookup
+huge_mixed,both,255,63,63,1.0000,1,63,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,63,6,10.5000,32,63,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,63,6,10.5000,32,63,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,63,6,10.5000,32,63,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,63,6,10.5000,32,63,0,xor+msb logical chunk lookup
+fixed,both,255,64,64,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,64,64,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,64,1,64.0000,64,64,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,64,7,9.1429,32,64,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,64,1,64.0000,64,64,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,64,1,64.0000,64,64,0,xor+msb logical chunk lookup
+fixed,both,255,65,65,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,65,65,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,65,2,32.5000,64,65,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,65,2,32.5000,64,65,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,65,2,32.5000,64,65,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,65,2,32.5000,64,65,0,xor+msb logical chunk lookup
+fixed,both,255,127,127,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,127,127,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,127,7,18.1429,64,127,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,127,7,18.1429,64,127,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,127,7,18.1429,64,127,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,127,7,18.1429,64,127,0,xor+msb logical chunk lookup
+fixed,both,255,128,128,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,128,128,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,128,1,128.0000,128,128,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,128,8,16.0000,64,128,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,128,1,128.0000,128,128,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,128,1,128.0000,128,128,0,xor+msb logical chunk lookup
+fixed,both,255,129,129,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,129,129,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,129,2,64.5000,128,129,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,129,2,64.5000,128,129,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,129,2,64.5000,128,129,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,129,2,64.5000,128,129,0,xor+msb logical chunk lookup
+fixed,both,255,255,255,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,255,255,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,255,8,31.8750,128,255,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,255,8,31.8750,128,255,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,255,8,31.8750,128,255,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,255,8,31.8750,128,255,0,xor+msb logical chunk lookup
+fixed,both,255,256,256,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,256,256,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,256,1,256.0000,256,256,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,256,9,28.4444,128,256,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,256,1,256.0000,256,256,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,256,1,256.0000,256,256,0,xor+msb logical chunk lookup
+fixed,both,255,257,257,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,257,257,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,257,2,128.5000,256,257,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,257,2,128.5000,256,257,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,257,2,128.5000,256,257,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,257,2,128.5000,256,257,0,xor+msb logical chunk lookup
+fixed,both,255,511,511,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,511,511,1.0000,1,64,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,511,9,56.7778,256,511,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,511,9,56.7778,256,511,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,511,9,56.7778,256,511,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,511,9,56.7778,256,511,0,xor+msb logical chunk lookup
+fixed,both,255,512,512,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,512,1,512.0000,512,512,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,512,1,512.0000,512,512,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,512,10,51.2000,256,512,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,512,1,512.0000,512,512,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,512,1,512.0000,512,512,0,xor+msb logical chunk lookup
+fixed,both,255,513,513,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,513,2,256.5000,512,513,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,513,2,256.5000,512,513,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,513,3,171.0000,256,513,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,513,2,256.5000,512,513,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,513,2,256.5000,512,513,0,xor+msb logical chunk lookup
+fixed,both,255,1000,1000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,1000,489,2.0450,512,575,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,1000,6,166.6667,512,1000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,1000,9,111.1111,512,1000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,1000,6,166.6667,512,1000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,1000,6,166.6667,512,1000,0,xor+msb logical chunk lookup
+fixed,both,255,1024,1024,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,1024,2,512.0000,512,1024,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,1024,2,512.0000,512,1024,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,1024,11,93.0909,512,1024,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,1024,2,512.0000,512,1024,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,1024,1,1024.0000,1024,1024,0,xor+msb logical chunk lookup
+fixed,both,255,2048,2048,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,2048,4,512.0000,512,2048,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,2048,4,512.0000,512,2048,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,2048,13,157.5385,512,2048,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,2048,4,512.0000,512,2048,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,2048,1,2048.0000,2048,2048,0,xor+msb logical chunk lookup
+fixed,both,255,4096,4096,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,4096,8,512.0000,512,4096,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,4096,8,512.0000,512,4096,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,4096,17,240.9412,512,4096,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,4096,8,512.0000,512,4096,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,4096,1,4096.0000,4096,4096,0,xor+msb logical chunk lookup
+fixed,both,255,8192,8192,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,8192,16,512.0000,512,8192,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,8192,16,512.0000,512,8192,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,8192,25,327.6800,512,8192,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,8192,16,512.0000,512,8192,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,8192,1,8192.0000,8192,8192,0,xor+msb logical chunk lookup
+fixed,both,255,10000,10000,1.0000,1,64,0,shift/mask; base-page lookup
+huge_mixed,both,255,10000,291,34.3643,512,9773,0,huge/base page-table lookup
+multi_size_unaligned,fair,255,10000,21,476.1905,512,10000,0,idealized greedy multi-size lookup
+multi_size_aligned,fair,255,10000,25,400.0000,512,10000,0,greedy multi-size lookup with alignment constraint
+binary_adaptive_limited,fair,255,10000,21,476.1905,512,10000,0,xor+msb logical lookup plus capped subchunk index
+binary_adaptive_unbounded,upper_bound,255,10000,5,2000.0000,8192,10000,0,xor+msb logical chunk lookup
