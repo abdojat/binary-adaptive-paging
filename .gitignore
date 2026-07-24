@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+results/
+results_v1/
+results_v2/
+results_v3/
+results_v4_sensitivity/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+.DS_Store
