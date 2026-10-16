@@ -1,0 +1,7 @@
+region_size_pages,start_vpn,physical_layout,threshold_fraction,seed,updates,model,oracle_comparisons,map_ops,unmap_ops,protect_ops,cow_remap_ops,invalid_updates_rejected,final_state_sha256,parent_groups,base_records,pending_exceptions,peak_exception_count,compactions,compacted_pages,changed_parent_groups,parent_record_scans,locally_validated_pages,semantic_mismatches,update_latency_measured,native_memory_bytes_measured,tlb_measured
+10000,1,fragmented_permissions,0.05,1,12,bap_eager,97065,3,3,3,3,2,7c8c1db82986a19e28ef5e8738f008a6470cef16912b7682642b6ce391fb837b,21,881,0,0,0,0,12,535,18,0,NO,NO,NO
+10000,1,fragmented_permissions,0.05,1,12,bap_overlay,97065,3,3,3,3,2,7c8c1db82986a19e28ef5e8738f008a6470cef16912b7682642b6ce391fb837b,21,866,17,17,0,0,0,0,18,0,NO,NO,NO
+10000,1,fragmented_permissions,0.05,1,12,fixed_eager,97065,3,3,3,3,2,7c8c1db82986a19e28ef5e8738f008a6470cef16912b7682642b6ce391fb837b,20,881,0,0,0,0,12,535,18,0,NO,NO,NO
+10000,1,fragmented_permissions,0.05,1,12,fixed_overlay,97065,3,3,3,3,2,7c8c1db82986a19e28ef5e8738f008a6470cef16912b7682642b6ce391fb837b,20,866,17,17,0,0,0,0,18,0,NO,NO,NO
+10000,1,fragmented_permissions,0.05,1,12,ranges_eager,97065,3,3,3,3,2,7c8c1db82986a19e28ef5e8738f008a6470cef16912b7682642b6ce391fb837b,1,881,0,0,0,0,12,10472,18,0,NO,NO,NO
+10000,1,fragmented_permissions,0.05,1,12,ranges_overlay,97065,3,3,3,3,2,7c8c1db82986a19e28ef5e8738f008a6470cef16912b7682642b6ce391fb837b,1,866,17,17,0,0,0,0,18,0,NO,NO,NO
