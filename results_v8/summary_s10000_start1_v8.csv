@@ -1,0 +1,6 @@
+physical_layout,bap_ns_per_lookup,range_cap512_ns_per_lookup,range_unbounded_ns_per_lookup,range_indexed_ns_per_lookup,bap_metadata_bytes,range_cap512_metadata_bytes,range_unbounded_metadata_bytes,range_indexed_metadata_bytes
+contiguous,3.3562,24.4314,3.4999,2.3302,704.0000,512.0000,56.0000,672.0000
+contiguous_phase_matched,3.3588,24.4168,3.3629,2.3258,704.0000,512.0000,56.0000,672.0000
+fragmented_32,27.6604,51.4956,56.4464,31.5270,7712.0000,7544.0000,7544.0000,7704.0000
+fragmented_permissions,29.3496,50.7563,57.3217,29.2808,7760.0000,7592.0000,7592.0000,7752.0000
+mixed_permissions,3.7605,24.8501,10.3044,5.4566,752.0000,536.0000,104.0000,696.0000
