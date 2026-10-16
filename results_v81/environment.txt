@@ -1,0 +1,10 @@
+Experiment: BAP v8.1 metadata-lookup ablation
+C++ compiler:
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Python:
+Python 3.12.3
+CPU:
+Architecture:                         x86_64
+Model name:                           12th Gen Intel(R) Core(TM) i5-12500H
+Hypervisor vendor:                    Microsoft
+RUNS=10 QUERIES=4096 REPEATS=5
