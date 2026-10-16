@@ -1,0 +1,20 @@
+Matplotlib 3.11.0
+[OK] BAP lookup validated for region sizes 1..4096 pages.
+[OK] Wrote results to /tmp/bap-early-jm6gp5_v/v0/summary.csv
+PASS deterministic CSV comparison v0
+[OK] BAP lookup validated for region sizes 1..4096 pages.
+[OK] Wrote summary to /tmp/bap-early-jm6gp5_v/v1/summary_v1.csv
+[OK] Wrote selected comparison to /tmp/bap-early-jm6gp5_v/v1/selected_comparison_v1.csv
+PASS deterministic CSV comparison v1
+[OK] Unbounded BAP lookup validated for region sizes 1..4096.
+[OK] Limited BAP lookup validated for region sizes 1..4096 with max chunk 512.
+[OK] Wrote summary: /tmp/bap-early-jm6gp5_v/v2/summary_v2.csv
+[OK] Wrote fair comparison: /tmp/bap-early-jm6gp5_v/v2/fair_comparison_start0_v2.csv
+[OK] Wrote upper-bound comparison: /tmp/bap-early-jm6gp5_v/v2/upper_bound_comparison_start0_v2.csv
+[OK] Wrote alignment effect: /tmp/bap-early-jm6gp5_v/v2/alignment_effect_v2.csv
+PASS deterministic CSV comparison v2
+Traceback (most recent call last):
+  File "<stdin>", line 17, in <module>
+  File "/mnt/d/Users/abdal/Desktop/bap-sim/simulator_v3_workloads.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'

@@ -4,5 +4,14 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-*.log
+# Keep research logs visible; only disposable validation/build output is ignored.
+/build/
+/validation-output/
+/lookup_benchmark_v8
+/lookup_ablation_v81
+/dynamic_benchmark_v83b1
+*.exe
+*.o
+*.obj
+*.pdb
 .DS_Store

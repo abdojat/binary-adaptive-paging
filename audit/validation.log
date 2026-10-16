@@ -1,0 +1,193 @@
+PASS: 313 frozen files match pre-cleanup SHA-256
+PASS: 259 archived CSVs structurally valid and finite
+PASS: Python syntax
++ bash -n /mnt/d/Users/abdal/Desktop/bap-sim/run_v81.sh
++ bash -n /mnt/d/Users/abdal/Desktop/bap-sim/run_v83a.sh
++ bash -n /mnt/d/Users/abdal/Desktop/bap-sim/run_v83b0.sh
++ bash -n /mnt/d/Users/abdal/Desktop/bap-sim/run_v83b1.sh
++ g++ -O3 -std=c++20 -Wall -Wextra -pedantic /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8.cpp -o /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8
++ g++ -O3 -std=c++20 -Wall -Wextra -pedantic /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81.cpp -o /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81
++ g++ -O3 -std=c++20 -Wall -Wextra -pedantic /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1.cpp -o /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1
++ /usr/bin/python3 feasibility_v5.py --out /tmp/bap-validation-8xfj1_ar/feasibility_summary_v5.csv --validate
+PASS: XOR/MSB lookup, exact coverage, legal alignment, and reference cases
+Wrote 72 audit rows: /tmp/bap-validation-8xfj1_ar/feasibility_summary_v5.csv
+ideal_powers_of_two   start=  0 BAP= 21 legal= 21 split-only=   21 retile=   21
+ideal_powers_of_two   start=  1 BAP= 21 legal=  0 split-only=  204 retile=   30
+ideal_powers_of_two   start=  7 BAP= 21 legal=  0 split-only=  204 retile=   30
+ideal_powers_of_two   start= 64 BAP= 21 legal=  1 split-only=   80 retile=   24
+x86_4k_2m             start=  0 BAP= 21 legal= 19 split-only=  291 retile=  291
+x86_4k_2m             start=  1 BAP= 21 legal=  0 split-only=10000 retile=  802
+x86_4k_2m             start=  7 BAP= 21 legal=  0 split-only=10000 retile=  802
+x86_4k_2m             start= 64 BAP= 21 legal=  0 split-only=10000 retile=  802
++ /usr/bin/python3 translation_v6.py --out /tmp/bap-validation-8xfj1_ar/translation_semantics_v6.csv --validate
+PASS: complete VA->PA byte translation, permissions, unmapped regions, physical runs
+Created 45 simulation rows at /tmp/bap-validation-8xfj1_ar/translation_semantics_v6.csv
+contiguous BAP 21 ranges(cap512) 20 ranges(unbounded) 1 x86 leaves 10000
+contiguous_phase_matched BAP 21 ranges(cap512) 20 ranges(unbounded) 1 x86 leaves 802
+fragmented_32 BAP 313 ranges(cap512) 313 ranges(unbounded) 313 x86 leaves 10000
+mixed_permissions BAP 23 ranges(cap512) 21 ranges(unbounded) 3 x86 leaves 10000
+fragmented_permissions BAP 315 ranges(cap512) 315 ranges(unbounded) 315 x86 leaves 10000
++ /usr/bin/python3 metadata_lookup_v7.py --out /tmp/bap-validation-8xfj1_ar/metadata_lookup_v7.csv --validate
+PASS: BAP direct arithmetic index, reference translation, metadata budgets and lookup traces
+Generated 540 scenario/trace results at /tmp/bap-validation-8xfj1_ar/metadata_lookup_v7.csv
+contiguous                BAP=   704 B  cap=   512 B  unbounded=    56 B   child_cmp=1.0000 global_cap_cmp=4.4590
+contiguous_phase_matched  BAP=   704 B  cap=   512 B  unbounded=    56 B   child_cmp=1.0000 global_cap_cmp=4.4590
+fragmented_32             BAP=  7712 B  cap=  7544 B  unbounded=  7544 B   child_cmp=4.0449 global_cap_cmp=8.3721
+mixed_permissions         BAP=   752 B  cap=   536 B  unbounded=   104 B   child_cmp=1.0205 global_cap_cmp=4.5117
+fragmented_permissions    BAP=  7760 B  cap=  7592 B  unbounded=  7592 B   child_cmp=4.0547 global_cap_cmp=8.3779
++ /usr/bin/python3 formal_audit_v82.py --out /tmp/bap-validation-8xfj1_ar/formal_checks_v82.csv
+PASS: 10000 exhaustive structural sizes, 633 PFN/permission layouts
+OUTPUT: /tmp/bap-validation-8xfj1_ar/formal_checks_v82.csv
+S=10000 contiguous parents 21 20 records 21 20 metadata 704 672
+S=10000 fragmented parents 21 20 records 313 313 metadata 7712 7704
+S=10000 mixed_permissions parents 21 20 records 23 22 metadata 752 720
++ /usr/bin/python3 dynamic_correctness_v83a.py --out /tmp/bap-validation-8xfj1_ar/dynamic_correctness_v83a.csv --validate
+PASS: BAP/fixed/range parent indexes, six-model differential semantics, byte addresses, overlay compaction, invalid-update atomicity
+PASS: 96 differential scenarios, 576 model rows, zero semantic mismatches
+OUTPUT: /tmp/bap-validation-8xfj1_ar/dynamic_correctness_v83a.csv
+All six models: exact PFNs, read/write/execute permissions, unmapped faults, bounds, invalid-operation atomicity
+NOTE: No latency / incremental update cost / TLB measurements have been performed.
++ /usr/bin/python3 dynamic_incremental_v83b0.py --out /tmp/bap-validation-8xfj1_ar/incremental_semantics_v83b0.csv --validate
+PASS: local patch split/merge, overlay exception writes, compaction, PFN index and rejection atomicity
+PASS: 96 incremental scenarios; 576 model rows; zero differential semantic mismatches
+OUTPUT: /tmp/bap-validation-8xfj1_ar/incremental_semantics_v83b0.csv
+NOTE: parent_record_scans is a logical diagnostic, NOT native incremental latency or fair dynamic-range-tree cost
++ /usr/bin/python3 verify_v83b0_against_v83a.py --old /tmp/bap-validation-8xfj1_ar/dynamic_correctness_v83a.csv --new /tmp/bap-validation-8xfj1_ar/incremental_semantics_v83b0.csv
+PASS: 576 identical scenario/model states; hashes, record counts, exceptions, compactions, mismatches match v8.3A
++ /usr/bin/python3 dynamic_correctness_v83a.py --sizes 10000 --starts 1 --layouts fragmented_permissions --thresholds 0.05 --seeds 1 --updates 12 --out /tmp/bap-validation-8xfj1_ar/large_region_spotcheck.csv
+PASS: 1 differential scenarios, 6 model rows, zero semantic mismatches
+OUTPUT: /tmp/bap-validation-8xfj1_ar/large_region_spotcheck.csv
+All six models: exact PFNs, read/write/execute permissions, unmapped faults, bounds, invalid-operation atomicity
+NOTE: No latency / incremental update cost / TLB measurements have been performed.
++ /usr/bin/python3 dynamic_incremental_v83b0.py --sizes 10000 --starts 1 --layouts fragmented_permissions --thresholds 0.05 --seeds 1 --updates 12 --out /tmp/bap-validation-8xfj1_ar/large_region_v83b0.csv
+PASS: 1 incremental scenarios; 6 model rows; zero differential semantic mismatches
+OUTPUT: /tmp/bap-validation-8xfj1_ar/large_region_v83b0.csv
+NOTE: parent_record_scans is a logical diagnostic, NOT native incremental latency or fair dynamic-range-tree cost
++ /usr/bin/python3 bap_v8_repeatability_gate.py /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_1.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_10.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_2.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_3.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_4.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_5.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_6.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_7.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_8.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v8/repetitions/run_9.csv --out /tmp/bap-validation-8xfj1_ar/repeatability_summary.csv
+PASS: 10 independent process runs, 540 matched scenario-seed rows/run
+Wrote 540 grouped comparisons to /tmp/bap-validation-8xfj1_ar/repeatability_summary.csv
+
+Uniform random, start=1, size=10000: (+ delta means BAP faster)
+contiguous                 BAP   2.8498 ns vs indexed   2.2014 ns; paired Δ  -0.6484 ns; 95% boot CI [-0.7138, -0.5259]
+contiguous_phase_matched   BAP   2.8794 ns vs indexed   2.1642 ns; paired Δ  -0.7152 ns; 95% boot CI [-0.7371, -0.6975]
+fragmented_32              BAP  26.2529 ns vs indexed  25.7994 ns; paired Δ  -0.4535 ns; 95% boot CI [-0.7738, -0.1659]
+fragmented_permissions     BAP  26.7942 ns vs indexed  25.7767 ns; paired Δ  -1.0175 ns; 95% boot CI [-1.3737, -0.6290]
+mixed_permissions          BAP   3.3661 ns vs indexed   5.4476 ns; paired Δ   2.0815 ns; 95% boot CI [2.0163, 2.1561]
+
+Reminder: bootstrap uncertainty is exploratory; isolated environment and independent runs matter.
++ /usr/bin/python3 analyze_v81.py /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_1.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_10.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_2.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_3.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_4.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_5.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_6.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_7.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_8.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v81/repetitions/run_9.csv --out /tmp/bap-validation-8xfj1_ar/ablation_summary_v81.csv
+PASS: 10 matching process runs, 540 scenario-seed rows/run, 720 contrasts
+Wrote /tmp/bap-validation-8xfj1_ar/ablation_summary_v81.csv
+
+Predeclared focus: S=10000, start=1, mixed_permissions, uniform_random
+bap_selector_arithmetic_vs_binary     A=4.7460 B=24.6301 delta=19.8841 CI=[19.7692, 19.9987] A-wins=1.000
+fixed_selector_arithmetic_vs_binary   A=4.3345 B=24.6137 delta=20.2792 CI=[20.1677, 20.3890] A-wins=1.000
+partition_bap_vs_fixed_binary         A=24.6301 B=24.6137 delta=-0.0164 CI=[-0.1052, 0.0630] A-wins=0.500
+partition_bap_vs_fixed_arithmetic     A=4.7460 B=4.3345 delta=-0.4115 CI=[-0.4390, -0.3840] A-wins=0.000
+Note: CIs exploratory; several contrasts/scenarios are examined; no multiple-testing correction.
++ /usr/bin/python3 analyze_v83b1.py /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_1.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_10.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_2.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_3.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_4.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_5.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_6.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_7.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_8.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_9.csv --out /tmp/bap-validation-8xfj1_ar/paired_pilot_summary.csv
+PASS: 10 independent runs, 48 matched seed-scenarios/run, 192 paired comparisons. Wrote /tmp/bap-validation-8xfj1_ar/paired_pilot_summary.csv
+CAUTION: exploratory timings only; dynamic allocation peak bytes NOT measured; multiple comparisons uncorrected; no kernel/TLB claims.
++ /usr/bin/python3 evaluate_v83b1_gate.py --summary /tmp/bap-validation-8xfj1_ar/paired_pilot_summary.csv --runs /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_1.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_10.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_2.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_3.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_4.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_5.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_6.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_7.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_8.csv /mnt/d/Users/abdal/Desktop/bap-sim/results_v83b1/repetitions/run_9.csv --out /tmp/bap-validation-8xfj1_ar/decision.csv --report /tmp/bap-validation-8xfj1_ar/decision.md
+PASS: 10 matching process runs, 288 rows/run, 16 settings, 192 contrasts
+BAP overlay vs fixed overlay: update wins 7/16; positive exploratory CI 0/16
+BAP overlay vs ranges overlay: update wins 11/16; positive exploratory CI 3/16
+G1 both-baseline CI-positive settings: 0/16; latency-only 10%/5% settings: 0/16
+DECISION: current BAP-specific dynamic speedup NOT DEMONSTRATED. Memory/G3 unassessed.
+WROTE: /tmp/bap-validation-8xfj1_ar/decision.csv and /tmp/bap-validation-8xfj1_ar/decision.md
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/v8_selfcheck.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --validate --out /tmp/bap-validation-8xfj1_ar/v81_selfcheck.csv
+PASS: exhaustive parent selection, translation and permissions (sizes 1..1030)
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --validate --out /tmp/bap-validation-8xfj1_ar/dynamic_selfcheck.csv
+PASS: six-model dynamic lookup/update semantic oracle on 4 sizes x 4 layouts
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_1.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_2.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_3.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_4.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_5.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_6.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_7.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_8.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_9.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8 --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_10.csv
+PASS: validated every address and permission for all layouts. 540 timing rows; checksum=176
++ /usr/bin/python3 bap_v8_repeatability_gate.py /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_1.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_2.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_3.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_4.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_5.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_6.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_7.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_8.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_9.csv /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/run_10.csv --out /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/summary.csv
+PASS: 10 independent process runs, 540 matched scenario-seed rows/run
+Wrote 540 grouped comparisons to /tmp/bap-validation-8xfj1_ar/lookup_benchmark_v8_runs/summary.csv
+
+Uniform random, start=1, size=10000: (+ delta means BAP faster)
+contiguous                 BAP   2.8341 ns vs indexed   2.1300 ns; paired Δ  -0.7041 ns; 95% boot CI [-0.7189, -0.6903]
+contiguous_phase_matched   BAP   2.8549 ns vs indexed   2.1249 ns; paired Δ  -0.7300 ns; 95% boot CI [-0.7456, -0.7133]
+fragmented_32              BAP  26.2671 ns vs indexed  25.8885 ns; paired Δ  -0.3785 ns; 95% boot CI [-0.6945, -0.0524]
+fragmented_permissions     BAP  26.5159 ns vs indexed  26.0856 ns; paired Δ  -0.4303 ns; 95% boot CI [-0.8043, -0.0254]
+mixed_permissions          BAP   3.2694 ns vs indexed   5.2741 ns; paired Δ   2.0048 ns; 95% boot CI [1.9607, 2.0556]
+
+Reminder: bootstrap uncertainty is exploratory; isolated environment and independent runs matter.
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_1.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_2.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_3.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_4.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_5.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_6.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_7.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_8.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_9.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81 --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_10.csv
+PASS: 540 ablation rows; four correct variants; checksum=184
++ /usr/bin/python3 analyze_v81.py /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_1.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_2.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_3.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_4.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_5.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_6.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_7.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_8.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_9.csv /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/run_10.csv --out /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/summary.csv
+PASS: 10 matching process runs, 540 scenario-seed rows/run, 720 contrasts
+Wrote /tmp/bap-validation-8xfj1_ar/lookup_ablation_v81_runs/summary.csv
+
+Predeclared focus: S=10000, start=1, mixed_permissions, uniform_random
+bap_selector_arithmetic_vs_binary     A=4.8268 B=24.6114 delta=19.7846 CI=[19.6023, 19.9540] A-wins=1.000
+fixed_selector_arithmetic_vs_binary   A=4.3414 B=24.8873 delta=20.5459 CI=[20.3606, 20.7666] A-wins=1.000
+partition_bap_vs_fixed_binary         A=24.6114 B=24.8873 delta=0.2759 CI=[0.0049, 0.5962] A-wins=0.600
+partition_bap_vs_fixed_arithmetic     A=4.8268 B=4.3414 delta=-0.4854 CI=[-0.6266, -0.4049] A-wins=0.000
+Note: CIs exploratory; several contrasts/scenarios are examined; no multiple-testing correction.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_1.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_2.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_3.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_4.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_5.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_6.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_7.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_8.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_9.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1 --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_10.csv
+PASS: 288 verified pilot rows; per-case checksums saved. Timings are exploratory only.
++ /usr/bin/python3 analyze_v83b1.py /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_1.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_2.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_3.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_4.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_5.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_6.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_7.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_8.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_9.csv /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/run_10.csv --out /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/summary.csv
+PASS: 10 independent runs, 48 matched seed-scenarios/run, 192 paired comparisons. Wrote /tmp/bap-validation-8xfj1_ar/dynamic_benchmark_v83b1_runs/summary.csv
+CAUTION: exploratory timings only; dynamic allocation peak bytes NOT measured; multiple comparisons uncorrected; no kernel/TLB claims.
+PASS: 313 frozen files match pre-cleanup SHA-256
+PASS: artifact validation complete; new timings are smoke evidence only
+PASS: 313 frozen files match pre-cleanup SHA-256

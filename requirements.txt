@@ -1,0 +1,3 @@
+# Plotting dependency for v1-v4; not a historical lockfile.
+# The original Matplotlib version was not recorded. See docs/REPRODUCIBILITY.md.
+matplotlib

@@ -1,0 +1,4 @@
+PASS: 313 frozen files match pre-cleanup SHA-256 (223 match original Git-blob bytes instead of local checkout bytes)
+PASS: changed scientific artifact rejected
+PASS: 80 local Markdown navigation links
+PASS: all historical and new Python syntax

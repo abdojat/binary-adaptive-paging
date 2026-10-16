@@ -1,0 +1,2 @@
+[OK] BAP XOR/MSB lookup validated for region sizes 1..4096.
+PASS v3 lookup only, no randomized workload regeneration
